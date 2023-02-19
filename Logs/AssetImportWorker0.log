@@ -1,0 +1,224 @@
+Using pre-set license
+Built from '2021.1/china_unity/release' branch; Version is '2021.1.7f1c1 (4e944ebb9621) revision 5149774'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home China; OS build 19044.2604; Version 2009; 64bit' Language: 'zh' Physical Memory: 11928 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\GraduationDesign\unity hub downloads\2021.1.7f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/GraduationDesign/Geocentric-plan
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+12261
+Successfully changed project path to: E:/GraduationDesign/Geocentric-plan
+E:/GraduationDesign/Geocentric-plan
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 55.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.7f1c1 (4e944ebb9621)
+[Subsystems] Discovering subsystems at path E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/GraduationDesign/Geocentric-plan/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     1979 MB
+    Driver:   24.21.13.9907
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Managed'
+Mono path[1] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001410 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 52.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.282 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 56.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.259 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2215 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.4 MB.
+System memory in use after: 112.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2671.
+Total: 2.520500 ms (FindLiveObjects: 0.230000 ms CreateObjectMapping: 0.123900 ms MarkObjects: 2.087100 ms  DeleteObjects: 0.078100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs
+  artifactKey: Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs using Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c28e6ee9daa16134603e27c0227e04d') in 0.058980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.607555 seconds.
+  path: Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs
+  artifactKey: Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs using Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5eb435fb239f5c1dc1faddbc92025f') in 0.005957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.005557 seconds.
+  path: Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs
+  artifactKey: Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs using Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6337a4fecd147546aeff8f22dca163f') in 0.005488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 328.841845 seconds.
+  path: Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs
+  artifactKey: Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs using Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8bcd4822fce2760636ee23355e20af') in 0.010923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 966.911936 seconds.
+  path: Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs
+  artifactKey: Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs using Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5508843f3b76b6b9017483d5d0c94279') in 0.031387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.370826 seconds.
+  path: Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs
+  artifactKey: Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/Editor/RoomNodeGraphEditor.cs using Guid(72061c014e81a174384b5d99cf362913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5701e96dfbe4c7d28f96d82520573fb6') in 0.014345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.660294 seconds.
+  path: Assets/Scripts/NodeGraph/RoomNodeSO.cs
+  artifactKey: Guid(ce7f0d523e1c29f4491286bf8ba72f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/RoomNodeSO.cs using Guid(ce7f0d523e1c29f4491286bf8ba72f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4649129a42c44126ffc6783a75326b7e') in 0.011362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 504.342222 seconds.
+  path: Assets/Scripts/NodeGraph/RoomNodeSO.cs
+  artifactKey: Guid(ce7f0d523e1c29f4491286bf8ba72f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/RoomNodeSO.cs using Guid(ce7f0d523e1c29f4491286bf8ba72f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7999e1ab16b218a157311b11d2afc04c') in 0.038193 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001311 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.306 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.1 MB.
+System memory in use after: 105.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2673.
+Total: 3.333200 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.194300 ms MarkObjects: 2.856100 ms  DeleteObjects: 0.026000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001228 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.116 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.1 MB.
+System memory in use after: 105.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2675.
+Total: 2.379600 ms (FindLiveObjects: 0.215000 ms CreateObjectMapping: 0.099400 ms MarkObjects: 2.023700 ms  DeleteObjects: 0.040500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001490 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.199 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.1 MB.
+System memory in use after: 105.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2677.
+Total: 2.501300 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.111500 ms MarkObjects: 2.109600 ms  DeleteObjects: 0.048600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2654.261727 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs
+  artifactKey: Guid(c668607d846665148a07e6512e755cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs using Guid(c668607d846665148a07e6512e755cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3e352474ac691e051b7647a294b1c9') in 0.020367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.926504 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset
+  artifactKey: Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset using Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4fe3367ac5845e85eadb20756e4776') in 0.060361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.663094 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset
+  artifactKey: Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset using Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4687af9f9b411dfb9f5690003ddf848') in 0.012879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.416305 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset
+  artifactKey: Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset using Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c0b424d13d8ae01aef4fdfbb995a94') in 0.099306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.793520 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset
+  artifactKey: Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset using Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7dcd0fab63263c531730d99d13471d') in 0.023910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.836267 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset
+  artifactKey: Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset using Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb315cde3657bb5fa5a33f5736cda1eb') in 0.037470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.145923 seconds.
+  path: Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset
+  artifactKey: Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Dungeon/DungeonRoomNodeGraphs/RoomNodeGraph.asset using Guid(b80871c8a9a95c844a4451ab39468c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9852342813b34af86a0e2a63bff48c7f') in 0.082360 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
