@@ -5,12 +5,18 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
 {
     private GUIStyle roomNodeStyle;
     private static RoomNodeGraphSO currentRoomNodeGraph;
+    private RoomNodeSO currentRoomNode = null;//当前选择的房间节点
     private RoomNodeTypeListSO roomNodeTypeList;
 
     private const float nodeWidth = 160f;//结点宽
     private const float nodeHeight = 75f;//结点高
     private const int nodePadding = 25;//结点内边距
     private const int nodeBorder = 12;//结点边界
+
+    //连接线值
+    private const float connectingLineWidth = 3f;//连接线宽度
+    private const float connectingLineArrowSize = 6f;//连接线箭头大小
+
     [MenuItem("Room Node Graph Editor",menuItem = "Window/Dungeon Editor/Room Node Graph Editor")]//添加菜单项
     private static void openWindow()//创建函数打开编辑器窗口
     {
@@ -60,8 +66,12 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         //如果房间节点图形脚本化对象类型的一个脚本化对象被选择，会执行以下的步骤
         if (currentRoomNodeGraph != null)
         {
+            //如果被拖动，则画连接线
+            DrawDraggedLine();
             //处理事件
             ProcessEvents(Event.current);//Event.current将被立即处理的当前事件
+            //绘制房间节点之间的连接线
+            DrawRoomConnections();
             //绘制房间节点
             DrawRoomNodes();
         }
@@ -71,11 +81,51 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         }
     }
 
+    //如果被拖动，则画连接线
+    private void DrawDraggedLine()
+    {
+        if (currentRoomNodeGraph.linePosition != Vector2.zero)
+        {
+            //绘制连接线，从房间节点到连接线末尾
+            Handles.DrawBezier(currentRoomNodeGraph.roomNodeToDrawLineFrom.rect.center, currentRoomNodeGraph.linePosition,
+                currentRoomNodeGraph.roomNodeToDrawLineFrom.rect.center, currentRoomNodeGraph.linePosition, Color.white, null, connectingLineWidth);
+        }
+    }
+
     //处理事件函数
     private void ProcessEvents(Event currentEvent)
     {
-        //处理房间节点图形事件
-        ProcessRoomNodeGraphEvents(currentEvent);
+        //如果当前房间节点为空或当前房间节点未被拖动，则获取鼠标所在的房间节点
+        if (currentRoomNode==null || currentRoomNode.isLeftClickDragging == false)
+        {
+            //返回当前鼠标悬停的房间节点
+            currentRoomNode = IsMouseOverRoomNode(currentEvent);
+        }
+        //如果鼠标没有悬停在任意一个房间节点上 或 连接线起始房间节点不为空
+        if (currentRoomNode == null || currentRoomNodeGraph.roomNodeToDrawLineFrom!=null)
+        {
+            //处理房间节点图形事件
+            ProcessRoomNodeGraphEvents(currentEvent);
+        }
+        //否则运行房间节点事件
+        else
+        {
+            //运行房间节点事件
+            currentRoomNode.ProcessEvents(currentEvent);
+        }
+    }
+
+    //检查鼠标是否悬停在房间节点上，如果是则返回房间节点，如果不是则返回null
+    private RoomNodeSO IsMouseOverRoomNode(Event currentEvent)
+    {
+        for(int i = currentRoomNodeGraph.roomNodeList.Count - 1; i >= 0; i--)//遍历当前房间节点图中的每一个房间节点
+        {
+            if (currentRoomNodeGraph.roomNodeList[i].rect.Contains(currentEvent.mousePosition))//判断当前的鼠标坐标是否在房间节点的矩形中
+            {
+                return currentRoomNodeGraph.roomNodeList[i];//如果在则返回该房间节点，说明鼠标悬停在当前房间节点矩形上
+            }
+        }
+        return null;//不在则返回null,说明鼠标没有悬停在任意一个房间节点矩形上
     }
 
     //处理房间节点图形事件函数
@@ -86,6 +136,14 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
             //处理鼠标按下事件
             case EventType.MouseDown:
                 ProcessMouseDownEvent(currentEvent);
+                break;
+            //处理鼠标抬起事件
+            case EventType.MouseUp:
+                ProcessMouseUpEvent(currentEvent);
+                break;
+            //处理鼠标拖动事件
+            case EventType.MouseDrag:
+                ProcessMouseDragEvent(currentEvent);
                 break;
             default:
                 break;
@@ -131,7 +189,125 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         AssetDatabase.AddObjectToAsset(roomNode, currentRoomNodeGraph);//AssetDatabase.AddObjectToAsset将 objectToAdd 添加到 path 下的现有资源中
 
         AssetDatabase.SaveAssets();//将所有未保存的资源更改写入磁盘
+
+        //更新当前房间节点图形的 房间节点字典
+        currentRoomNodeGraph.OnValidate();
     }
+
+    //处理鼠标抬起事件
+    private void ProcessMouseUpEvent(Event currentEvent)
+    {
+        //正在拖动连接线时释放鼠标右键
+        if(currentEvent.button==1 && currentRoomNodeGraph.roomNodeToDrawLineFrom != null)
+        {
+            //roomNode是释放鼠标时悬停的房间节点，即连接线末端的房间节点
+            RoomNodeSO roomNode = IsMouseOverRoomNode(currentEvent);
+            //如果连接线末端的房间节点存在
+            if (roomNode != null)
+            {
+                //如果能把末端房间节点加入到起始房间节点的子房间列表中
+                if (currentRoomNodeGraph.roomNodeToDrawLineFrom.AddChildRoomNodeIDToRoomNode(roomNode.id))
+                {
+                    //把起始房间节点加入到末端房间节点的父房间节点列表中
+                    roomNode.AddParentRoomNodeIDToRoomNode(currentRoomNodeGraph.roomNodeToDrawLineFrom.id);
+                }
+            }
+            //清除连接线拖拽
+            ClearLineDrag();
+        }
+    }
+
+    //处理鼠标拖动事件
+    private void ProcessMouseDragEvent(Event currentEvent)
+    {
+        //如果是鼠标右键
+        if (currentEvent.button == 1)
+        {
+            //处理鼠标右键拖动事件
+            ProcessRightMouseDragEvent(currentEvent);
+        }
+    }
+
+    //处理鼠标右键拖动事件
+    private void ProcessRightMouseDragEvent(Event currentEvent)
+    {
+        //如果连接线起始房间节点不为空
+        if (currentRoomNodeGraph.roomNodeToDrawLineFrom != null)
+        {
+            //拖动连接线方法
+            DragConnectingLine(currentEvent.delta);
+            GUI.changed = true;
+        }
+    }
+
+    //从起始房间节点拖动连接线
+    public void DragConnectingLine(Vector2 delta)
+    {
+        //更新连接线末端的位置
+        currentRoomNodeGraph.linePosition += delta;
+    }
+
+    //清除连接线
+    private void ClearLineDrag()
+    {
+        //连接线的起始房间节点为null
+        currentRoomNodeGraph.roomNodeToDrawLineFrom = null;
+        //连接线为（0,0）
+        currentRoomNodeGraph.linePosition = Vector2.zero;
+        //任何控件更改了输入数据的值，返回true
+        GUI.changed = true;
+    }
+
+    //绘制房间节点之间的连接线
+    private void DrawRoomConnections()
+    {
+        //循环遍历当前房间节点图的房间节点列表中所有的房间节点
+        foreach(RoomNodeSO roomNode in currentRoomNodeGraph.roomNodeList)
+        {
+            //如果该房间节点有子房间节点
+            if (roomNode.childRoomNodeIDList.Count > 0)
+            {
+                //循环遍历该房间节点的所有子房间节点
+                foreach(string childRoomNodeID in roomNode.childRoomNodeIDList)
+                {
+                    //如果子房间节点ID在房间节点字典中
+                    if (currentRoomNodeGraph.roomNodeDictionary.ContainsKey(childRoomNodeID))
+                    {
+                        //绘制房间节点和子房间节点之间的连接线
+                        DrawConnectionLine(roomNode, currentRoomNodeGraph.roomNodeDictionary[childRoomNodeID]);
+                        GUI.changed = true;
+                    }
+                }
+            }
+        }
+    }
+
+    //父房间节点和子房间节点之间画连接线
+    private void DrawConnectionLine(RoomNodeSO parentRoomNode,RoomNodeSO childRoomNode)
+    {
+        //获取连接线起始和末尾位置
+        Vector2 startPosition = parentRoomNode.rect.center;
+        Vector2 endPosition = childRoomNode.rect.center;
+
+        //计算中点
+        Vector2 midPosition = (endPosition + startPosition) / 2f;
+        //从开始到末尾的向量
+        Vector2 direction = endPosition - startPosition;
+        //计算距离中点的归一化（长度为1）垂直向量
+        Vector2 arrowTailPoint1 = midPosition - new Vector2(direction.y, direction.x).normalized * connectingLineArrowSize;//下方的箭头尾
+        Vector2 arrowTailPoint2 = midPosition + new Vector2(direction.y, direction.x).normalized * connectingLineArrowSize;//上方的箭头尾
+        //计算箭头头部
+        Vector2 arrowHeadPoint = midPosition + direction.normalized * connectingLineArrowSize;//箭头头部
+        
+        //画箭头
+        Handles.DrawBezier(arrowHeadPoint, arrowTailPoint1, arrowHeadPoint, arrowTailPoint1, Color.white, null, connectingLineWidth);
+        Handles.DrawBezier(arrowHeadPoint, arrowTailPoint2, arrowHeadPoint, arrowTailPoint2, Color.white, null, connectingLineWidth);
+        //画线
+        Handles.DrawBezier(startPosition, endPosition, startPosition, endPosition, Color.white, null, connectingLineWidth);
+        GUI.changed = true;
+    }
+
+
 
     //在图形编辑器中绘制房间节点
     private void DrawRoomNodes()

@@ -18,7 +18,8 @@ public class RoomNodeSO : ScriptableObject //继承ScriptableObject类
 #if UNITY_EDITOR
 
     [HideInInspector] public Rect rect;
-
+    [HideInInspector] public bool isLeftClickDragging = false;//左键拖动房间节点
+    [HideInInspector] public bool isSelected = false;//当前房间节点被选中
     //初始化节点
     public void Initialise(Rect rect,RoomNodeGraphSO nodeGraph,RoomNodeTypeSO roomNodeType)
     {
@@ -61,6 +62,119 @@ public class RoomNodeSO : ScriptableObject //继承ScriptableObject类
         return roomArray;
     }
 
+    //节点的处理事件方法
+    public void ProcessEvents(Event currentEvent)
+    {
+        switch (currentEvent.type) {
+            //处理鼠标按下事件
+            case EventType.MouseDown:
+                ProcessMouseDownEvent(currentEvent);
+                break;
+            //处理鼠标抬起事件
+            case EventType.MouseUp:
+                ProcessMouseUpEvent(currentEvent);
+                break;
+            //处理鼠标拖动事件
+            case EventType.MouseDrag:
+                ProcessMouseDragEvent(currentEvent);
+                break;
+            default:
+                break;
+        }
+    }
+
+    //处理鼠标按下事件
+    private void ProcessMouseDownEvent(Event currentEvent)
+    {
+        //如果是鼠标左键
+        if (currentEvent.button == 0)
+        {
+            //处理左键点击事件
+            ProcessLeftClickDownEvent();
+        }
+        //如果是鼠标右键
+        else if (currentEvent.button == 1)
+        {
+            //处理右键点击事件
+            ProcessRightClickDownEvent(currentEvent);
+        }
+    }
+
+    //处理左键点击事件
+    private void ProcessLeftClickDownEvent()
+    {
+        Selection.activeObject = this;//返回当前选择的物体，激活对象
+        //切换 节点是否被选择的状态
+        isSelected = !isSelected;
+    }
+
+    //处理右键点击事件
+    private void ProcessRightClickDownEvent(Event currentEvent)
+    {
+        //设置连接线起始房间节点和连接线的位置
+        roomNodeGraph.SetNodeToDrawConnectionLineFrom(this, currentEvent.mousePosition);
+    }
+
+    //处理鼠标抬起事件
+    private void ProcessMouseUpEvent(Event currentEvent)
+    {
+        //如果是鼠标左键
+        if (currentEvent.button == 0)
+        {
+            //处理鼠标左键抬起事件
+            ProcessLeftClickUpEvent();
+        }
+    }
+
+    //处理鼠标左键抬起事件
+    private void ProcessLeftClickUpEvent()
+    {
+        //如果左键点击拖动是true
+        if (isLeftClickDragging)
+        {
+            //将左键点击拖动设为false，即取消左键点击拖动
+            isLeftClickDragging = false;
+        }
+    }
+
+    //处理鼠标拖动事件
+    private void ProcessMouseDragEvent(Event currentEvent)
+    {
+        //如果是鼠标左键
+        if(currentEvent.button == 0){
+            //处理鼠标左键拖动事件
+            ProcessLeftMouseDragEvent(currentEvent);
+        }
+    }
+
+    //处理鼠标左键拖动事件
+    private void ProcessLeftMouseDragEvent(Event currentEvent)
+    {
+        isLeftClickDragging = true;//当前处于点击左键拖动状态
+        DragNode(currentEvent.delta);//Event.delta 与上次事件相比该鼠标的相对移动
+        GUI.changed = true;//GUI.changed 如果任何控件更改了输入数据的值，则返回 true
+    }
+
+    //拖动节点
+    public void DragNode(Vector2 delta)
+    {
+        rect.position += delta;//节点矩形位置改变
+        EditorUtility.SetDirty(this);//将 target 对象标记为“脏”
+    }
+
+    //把子房间节点id添加到房间节点，如果成功添加返回true
+    public bool AddChildRoomNodeIDToRoomNode(string childID)
+    {
+        childRoomNodeIDList.Add(childID);
+        return true;
+    }
+
+    //把父房间节点id添加到房间节点，如果成功添加返回true
+    public bool AddParentRoomNodeIDToRoomNode(string parentID)
+    {
+        parentRoomNodeIDList.Add(parentID);
+        return true;
+    }
 #endif
     #endregion
 }
