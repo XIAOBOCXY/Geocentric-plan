@@ -29,6 +29,17 @@ public class RoomNodeGraphSO : ScriptableObject   //继承ScriptableObject类
         }
     }
 
+    //通过roomnode ID获取room node
+    public RoomNodeSO GetRoomNode(string roomNodeID)
+    {
+        //在roomNodeDictionary中查找roomnode ID对应的room node
+        if (roomNodeDictionary.TryGetValue(roomNodeID,out RoomNodeSO roomNode))//不确定是否存在时加out
+        {
+            return roomNode;
+        }
+        return null;
+    }
+
     #region Editor Code
 #if UNITY_EDITOR
     [HideInInspector] public RoomNodeSO roomNodeToDrawLineFrom = null;//连接线的起始房间节点

@@ -4,6 +4,7 @@ using UnityEditor.Callbacks;//OnOpenAssetAttribute
 public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
 {
     private GUIStyle roomNodeStyle;
+    private GUIStyle roomNodeSelectedStyle;
     private static RoomNodeGraphSO currentRoomNodeGraph;
     private RoomNodeSO currentRoomNode = null;//当前选择的房间节点
     private RoomNodeTypeListSO roomNodeTypeList;
@@ -25,14 +26,31 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
 
     private void OnEnable()
     {
+        //Selection.selectionChanged选择的东西变化的时候调用
+        Selection.selectionChanged += InspectorSelectionChanged;
+
+        //定义节点布局样式
         roomNodeStyle = new GUIStyle();//GUIStyle可以基于已经存在的实例new一个新的实例,只需对原有的效果中不符合自己需求的进行修改
         roomNodeStyle.normal.background = EditorGUIUtility.Load("node1") as Texture2D;//加载一个内置资源，样式为node1
         roomNodeStyle.normal.textColor = Color.white;//结点字体颜色为白色
         roomNodeStyle.padding = new RectOffset(nodePadding, nodePadding, nodePadding, nodePadding);//内边距
         roomNodeStyle.border = new RectOffset(nodeBorder, nodeBorder, nodeBorder, nodeBorder);//边界
 
+        //定义被选中的节点样式
+        roomNodeSelectedStyle = new GUIStyle();//GUIStyle可以基于已经存在的实例new一个新的实例,只需对原有的效果中不符合自己需求的进行修改
+        roomNodeSelectedStyle.normal.background = EditorGUIUtility.Load("node1 on") as Texture2D;//加载一个内置资源，样式为node1 on
+        roomNodeSelectedStyle.normal.textColor = Color.white;//结点字体颜色为白色
+        roomNodeSelectedStyle.padding = new RectOffset(nodePadding, nodePadding, nodePadding, nodePadding);//内边距
+        roomNodeSelectedStyle.border = new RectOffset(nodeBorder, nodeBorder, nodeBorder, nodeBorder);//边界
+
         //加载房间节点类型
         roomNodeTypeList = GameResources.Instance.roomNodeTypeList;
+    }
+
+    private void OnDisable()
+    {
+        //取消委托，选择的东西变化的时候不再调用
+        Selection.selectionChanged -= InspectorSelectionChanged;
     }
 
     //如果在inspector中双击房间节点图形脚本化资产，则打开房间节点图形编辑器窗口
@@ -158,6 +176,14 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         {
             ShowContextMenu(currentEvent.mousePosition);
         }
+        //处理鼠标左键按下事件
+        else if (currentEvent.button == 0)
+        {
+            //清除连接线
+            ClearLineDrag();
+            //清除所有选择的房间节点
+            ClearAllSelectedRoomNodes();
+        }
     }
 
     //显示上下文菜单函数
@@ -165,12 +191,20 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
     {
         GenericMenu menu = new GenericMenu();//GenericMenu 允许您创建自定义上下文菜单和下拉菜单
         menu.AddItem(new GUIContent("create Room Node"), false, createRoomNode, mousePosition);//向菜单添加一个项
+        menu.AddSeparator("");//分隔
+        menu.AddItem(new GUIContent("Select All Room Nodes"), false, SelectAllRoomNodes);//添加 选择所有房间节点 选项
         menu.ShowAsContext();//右键单击时在鼠标下显示菜单
     }
 
     //在鼠标点击的位置创建一个房间节点
     private void createRoomNode(object mousePositionObject)
     {
+        //如果当前房间节点图的房间节点列表为空，即没有一个房间节点
+        if (currentRoomNodeGraph.roomNodeList.Count == 0)
+        {
+            //在（200,200）创建入口节点
+            createRoomNode(new Vector2(200f, 200f), roomNodeTypeList.list.Find(x => x.isEntrance));
+        }
         createRoomNode(mousePositionObject, roomNodeTypeList.list.Find(x => x.isNone)); ;
     }
 
@@ -192,6 +226,32 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
 
         //更新当前房间节点图形的 房间节点字典
         currentRoomNodeGraph.OnValidate();
+    }
+
+    //清除所有选择的房间节点
+    private void ClearAllSelectedRoomNodes()
+    {
+        //循环遍历房间节点图的每个房间节点
+        foreach (RoomNodeSO roomNode in currentRoomNodeGraph.roomNodeList)
+        {
+            //如果该房间节点被选择
+            if (roomNode.isSelected)
+            {
+                //取消选择该房间节点
+                roomNode.isSelected = false;
+                GUI.changed = true;
+            }
+        }
+    }
+
+    //选择所有节点
+    private void SelectAllRoomNodes()
+    {
+        foreach(RoomNodeSO roomNode in currentRoomNodeGraph.roomNodeList)
+        {
+            roomNode.isSelected = true;
+        }
+        GUI.changed = true;
     }
 
     //处理鼠标抬起事件
@@ -315,8 +375,28 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         //循环所有的房间节点并且绘制
         foreach(RoomNodeSO roomnode in currentRoomNodeGraph.roomNodeList)
         {
-            roomnode.Draw(roomNodeStyle);
+            if (roomnode.isSelected)
+            {
+                roomnode.Draw(roomNodeSelectedStyle);
+            }
+            else
+            {
+                roomnode.Draw(roomNodeStyle);
+            }
         }
         GUI.changed = true;
+    }
+
+    //面板中选项改变，即窗口更换资源
+    private void InspectorSelectionChanged()
+    {
+        //获取当前激活的房间节点图
+        RoomNodeGraphSO roomNodeGraph = Selection.activeObject as RoomNodeGraphSO;
+        if (roomNodeGraph != null)
+        {
+            //更改当前选择的房间节点图
+            currentRoomNodeGraph = roomNodeGraph;
+            GUI.changed = true;
+        }
     }
 }
