@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;//EditorWindow
 using UnityEditor.Callbacks;//OnOpenAssetAttribute
+using System.Collections.Generic;//Queue
 public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
 {
     private GUIStyle roomNodeStyle;
@@ -193,6 +194,9 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         menu.AddItem(new GUIContent("create Room Node"), false, createRoomNode, mousePosition);//向菜单添加一个项
         menu.AddSeparator("");//分隔
         menu.AddItem(new GUIContent("Select All Room Nodes"), false, SelectAllRoomNodes);//添加 选择所有房间节点 选项
+        menu.AddSeparator("");//分隔
+        menu.AddItem(new GUIContent("Delete Selected Room Node Links"), false, DeleteSelectedRoomNodeLinks);//删除选择的房间节点连接线
+        menu.AddItem(new GUIContent("Delete Selected Room Nodes"), false, DeleteSelectedRoomNodes);//删除选择的房间节点
         menu.ShowAsContext();//右键单击时在鼠标下显示菜单
     }
 
@@ -226,6 +230,87 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
 
         //更新当前房间节点图形的 房间节点字典
         currentRoomNodeGraph.OnValidate();
+    }
+
+    //删除选择的房间节点
+    private void DeleteSelectedRoomNodes()
+    {
+        //把要删除的房间节点放入队列
+        Queue<RoomNodeSO> roomNodeDeletiOnQueue = new Queue<RoomNodeSO>();
+        //遍历所有房间节点
+        foreach (RoomNodeSO roomNode in currentRoomNodeGraph.roomNodeList)
+        {
+            //房间节点被选择并且不是入口
+           if (roomNode.isSelected && !roomNode.roomNodeType.isEntrance)
+            {
+                //放入要删除的队列
+                roomNodeDeletiOnQueue.Enqueue(roomNode);
+                //遍历这个要删除节点的子房间节点
+                foreach(string childRoomNodeID in roomNode.childRoomNodeIDList)
+                {
+                    //获得这个子房间节点
+                    RoomNodeSO childRoomNode = currentRoomNodeGraph.GetRoomNode(childRoomNodeID);
+                    if (childRoomNode != null)
+                    {
+                        //子房间中删除这个节点的关系
+                        childRoomNode.RemoveParentRoomNodeIDFromRoomNode(roomNode.id);
+                    }
+                }
+                //遍历这个要删除节点的父房间节点
+                foreach(string parentRoomNodeID in roomNode.parentRoomNodeIDList)
+                {
+                    //获得这个父房间节点
+                    RoomNodeSO parentRoomNode = currentRoomNodeGraph.GetRoomNode(parentRoomNodeID);
+                    if (parentRoomNode != null)
+                    {
+                        //父房间中删除这个节点的关系
+                        parentRoomNode.RemoveChildRoomNodeIDFromRoomNode(roomNode.id);
+                    }
+                }
+            }
+        }
+        //删除队列中的房间节点
+        while (roomNodeDeletiOnQueue.Count > 0)
+        {
+            //房间节点出列
+            RoomNodeSO roomNodeToDelete = roomNodeDeletiOnQueue.Dequeue();
+            //在字典中移除房间节点id
+            currentRoomNodeGraph.roomNodeDictionary.Remove(roomNodeToDelete.id);
+            //在房间节点列表中移除节点
+            currentRoomNodeGraph.roomNodeList.Remove(roomNodeToDelete);
+            //在资源数据库中销毁房间节点
+            DestroyImmediate(roomNodeToDelete, true);
+            //将所有未保存的资源更改写入磁盘
+            AssetDatabase.SaveAssets();
+        }
+
+    }
+
+    //删除选择的房间节点连接线
+    private void DeleteSelectedRoomNodeLinks()
+    {
+        //遍历当前图的房间节点列表
+        foreach(RoomNodeSO roomNode in currentRoomNodeGraph.roomNodeList)
+        {
+            //房间节点被选择并且有子房间节点
+            if(roomNode.isSelected && roomNode.childRoomNodeIDList.Count > 0)
+            {
+                //遍历子房间节点
+                for(int i = roomNode.childRoomNodeIDList.Count - 1; i > 0; i--)
+                {
+                    //获取子房间节点
+                    RoomNodeSO childRoomNode = currentRoomNodeGraph.GetRoomNode(roomNode.childRoomNodeIDList[i]);
+                    //如果子房间节点不为空，并且子房间节点被选择，即在父子两个列表中相互删除父子关系
+                    if (childRoomNode != null && childRoomNode.isSelected)
+                    {
+                        //删除该房间节点的子房间列表中的childRoomNode.id，断关系
+                        roomNode.RemoveChildRoomNodeIDFromRoomNode(childRoomNode.id);
+                        //删除子房间节点的父房间列表中的roomNode.id，断关系
+                        childRoomNode.RemoveParentRoomNodeIDFromRoomNode(roomNode.id);
+                    }
+                }
+            }
+        }
     }
 
     //清除所有选择的房间节点

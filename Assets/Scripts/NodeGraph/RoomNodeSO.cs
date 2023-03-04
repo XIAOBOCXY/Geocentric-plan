@@ -248,6 +248,30 @@ public class RoomNodeSO : ScriptableObject //继承ScriptableObject类
         parentRoomNodeIDList.Add(parentID);
         return true;
     }
+
+    //如果有子房间节点就删除
+    public bool RemoveChildRoomNodeIDFromRoomNode(String childID)
+    {
+        //如果子房间列表中有childID
+        if (childRoomNodeIDList.Contains(childID))
+        {
+            childRoomNodeIDList.Remove(childID);
+            return true;
+        }
+        return false;
+    }
+
+    //如果有父房间节点就删除
+    public bool RemoveParentRoomNodeIDFromRoomNode(string parentID)
+    {
+        //如果父房间列表中有parentID
+        if (parentRoomNodeIDList.Contains(parentID))
+        {
+            parentRoomNodeIDList.Remove(parentID);
+            return true;
+        }
+        return false;
+    }
 #endif
     #endregion
 }
