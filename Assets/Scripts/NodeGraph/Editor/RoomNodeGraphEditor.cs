@@ -296,7 +296,7 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
             if(roomNode.isSelected && roomNode.childRoomNodeIDList.Count > 0)
             {
                 //遍历子房间节点
-                for(int i = roomNode.childRoomNodeIDList.Count - 1; i > 0; i--)
+                for(int i = roomNode.childRoomNodeIDList.Count - 1; i >= 0; i--)
                 {
                     //获取子房间节点
                     RoomNodeSO childRoomNode = currentRoomNodeGraph.GetRoomNode(roomNode.childRoomNodeIDList[i]);

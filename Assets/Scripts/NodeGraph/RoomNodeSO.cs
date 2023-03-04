@@ -50,6 +50,27 @@ public class RoomNodeSO : ScriptableObject //继承ScriptableObject类
             int selected = roomNodeTypeList.list.FindIndex(x => x == roomNodeType);
             int selection = EditorGUILayout.Popup("", selected, GetRoomNodeTypesToDisplay());//EditorGUILayout.Popup以参数形式获取当前所选的索引，并返回用户选择的索引
             roomNodeType = roomNodeTypeList.list[selection];//获取到选择的房间节点类型
+
+            //如果房间类型更改，那么连接不合法
+            if(roomNodeTypeList.list[selected].isCorridor && !roomNodeTypeList.list[selection].isCorridor || !roomNodeTypeList.list[selected].isCorridor
+                && roomNodeTypeList.list[selection].isCorridor || !roomNodeTypeList.list[selected].isBossRoom && roomNodeTypeList.list[selection].isBossRoom){
+                //如果有子房间节点
+                if (childRoomNodeIDList.Count > 0)
+                {
+                    //遍历子房间节点
+                    for(int i = childRoomNodeIDList.Count - 1; i >= 0; i--)
+                    {
+                        //获取子房间节点
+                        RoomNodeSO childRoomNode = roomNodeGraph.GetRoomNode(childRoomNodeIDList[i]);
+                        if (childRoomNode != null)
+                        {
+                            //子房间和该房间节点双向断绝父子关系
+                            RemoveChildRoomNodeIDFromRoomNode(childRoomNode.id);
+                            childRoomNode.RemoveParentRoomNodeIDFromRoomNode(id);
+                        }
+                    }
+                }
+            }
         }
 
         if (EditorGUI.EndChangeCheck())//如果在BeginChangeCheck和EndChangeCheck之间的代码块中，有控件被更改，就把它设置为脏
