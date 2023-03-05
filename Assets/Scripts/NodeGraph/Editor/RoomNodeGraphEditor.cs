@@ -7,6 +7,10 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
     private GUIStyle roomNodeStyle;
     private GUIStyle roomNodeSelectedStyle;
     private static RoomNodeGraphSO currentRoomNodeGraph;
+
+    private Vector2 graphOffset;//图偏移量
+    private Vector2 graphDrag;//图形拖动偏移量
+
     private RoomNodeSO currentRoomNode = null;//当前选择的房间节点
     private RoomNodeTypeListSO roomNodeTypeList;
 
@@ -18,6 +22,10 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
     //连接线值
     private const float connectingLineWidth = 3f;//连接线宽度
     private const float connectingLineArrowSize = 6f;//连接线箭头大小
+
+    //网格大小
+    private const float gridLarge = 100f;//网格最大
+    private const float gridSmall = 25f;//网格最小
 
     [MenuItem("Room Node Graph Editor",menuItem = "Window/Dungeon Editor/Room Node Graph Editor")]//添加菜单项
     private static void openWindow()//创建函数打开编辑器窗口
@@ -85,6 +93,10 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         //如果房间节点图形脚本化对象类型的一个脚本化对象被选择，会执行以下的步骤
         if (currentRoomNodeGraph != null)
         {
+            //绘制网格
+            DrawBackgroundGrid(gridSmall, 0.2f, Color.gray);
+            DrawBackgroundGrid(gridLarge, 0.3f, Color.gray);
+
             //如果被拖动，则画连接线
             DrawDraggedLine();
             //处理事件
@@ -98,6 +110,31 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
         {
             Repaint();//重新绘制
         }
+    }
+    //绘制背景表格
+    private void DrawBackgroundGrid(float gridSize,float gridOpacity,Color gridColor)
+    {
+        //垂直线的数量
+        int verticalLineCount = Mathf.CeilToInt((position.width + gridSize) / gridSize);
+        //水平线的数量
+        int horizontalLineCount = Mathf.CeilToInt((position.height + gridSize) / gridSize);
+        //Handles.color手柄的颜色
+        Handles.color = new Color(gridColor.r, gridColor.g, gridColor.b, gridOpacity);//r，g，b,透明度
+        graphOffset += graphDrag * 0.5f;//图偏移量是图形移动偏移量的一半
+        Vector3 gridOffset = new Vector3(graphOffset.x % gridSize, graphOffset.y % gridSize, 0);//Vector3用于表示 3D 向量和点。
+        //绘制垂直线
+        for (int i = 0; i < verticalLineCount; i++)
+        {
+            //Handles.DrawLine绘制一条从 p1 到 p2 的线。
+            Handles.DrawLine(new Vector3(gridSize * i, -gridSize, 0) + gridOffset, new Vector3(gridSize * i, position.height + gridSize, 0f)+gridOffset);
+        }
+        //绘制水平线
+        for (int j = 0; j < horizontalLineCount; j++)
+        {
+            Handles.DrawLine(new Vector3(-gridSize, gridSize * j, 0) + gridOffset, new Vector3(position.width + gridSize, gridSize * j, 0f) + gridOffset);
+        }
+        //重置手柄颜色为白色
+        Handles.color = Color.white;
     }
 
     //如果被拖动，则画连接线
@@ -114,6 +151,10 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
     //处理事件函数
     private void ProcessEvents(Event currentEvent)
     {
+        //重置图形拖动偏移量
+        graphDrag = Vector2.zero;
+
+
         //如果当前房间节点为空或当前房间节点未被拖动，则获取鼠标所在的房间节点
         if (currentRoomNode==null || currentRoomNode.isLeftClickDragging == false)
         {
@@ -371,6 +412,12 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
             //处理鼠标右键拖动事件
             ProcessRightMouseDragEvent(currentEvent);
         }
+        //如果是鼠标左键
+        else if (currentEvent.button == 0)
+        {
+            //处理鼠标左键拖动事件
+            ProcessLeftMouseDragEvent(currentEvent.delta);//Event.delta 与上次事件相比该鼠标的相对移动
+        }
     }
 
     //处理鼠标右键拖动事件
@@ -383,6 +430,19 @@ public class RoomNodeGraphEditor : EditorWindow //继承EditorWindow类
             DragConnectingLine(currentEvent.delta);
             GUI.changed = true;
         }
+    }
+
+    //处理鼠标左键拖动事件
+    private void ProcessLeftMouseDragEvent(Vector2 dragDelta)
+    {
+        //设置图形拖动偏移量为鼠标的偏移量
+        graphDrag = dragDelta;
+        //每一个节点都拖动偏移量的距离
+        for(int i = 0; i < currentRoomNodeGraph.roomNodeList.Count; i++)
+        {
+            currentRoomNodeGraph.roomNodeList[i].DragNode(dragDelta);
+        }
+        GUI.changed = true;
     }
 
     //从起始房间节点拖动连接线
