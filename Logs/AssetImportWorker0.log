@@ -15,11 +15,11 @@ E:/GraduationDesign/Geocentric-plan
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-14085
+4991
 Successfully changed project path to: E:/GraduationDesign/Geocentric-plan
 E:/GraduationDesign/Geocentric-plan
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 52.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1c1 (4e944ebb9621)
 [Subsystems] Discovering subsystems at path E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Resources/UnitySubsystems
@@ -36,16 +36,96 @@ Initialize mono
 Mono path[0] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Managed'
 Mono path[1] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.222346 seconds.
+Registered in 0.001339 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 52.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 51.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.879 seconds
+- Completed reload, in  1.437 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.145283 seconds.
+Registered in 0.001463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 121.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.707 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.6 MB.
+System memory in use after: 114.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2685.
+Total: 2.856300 ms (FindLiveObjects: 0.289000 ms CreateObjectMapping: 0.350500 ms MarkObjects: 1.913400 ms  DeleteObjects: 0.302100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Tiny RPG Forest/Artwork
+  artifactKey: Guid(2997bd1d056ed4d788a6a187a0745a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork using Guid(2997bd1d056ed4d788a6a187a0745a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1d7710a607e72ed475f0a4b2122b74') in 0.012828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced.png
+  artifactKey: Guid(95d22684aba5646d79a26b3287a692b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/Environment/tileset-sliced.png using Guid(95d22684aba5646d79a26b3287a692b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd159ff6f8b6af350898c559bd0dd16ec') in 1.040816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects
+  artifactKey: Guid(6b598df917e2f4bc1ab4004a1d4eed1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects using Guid(6b598df917e2f4bc1ab4004a1d4eed1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d79ce2298bc8b20e420c8ac9441abc') in 0.007933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Tiny RPG Forest
+  artifactKey: Guid(8adc20674ed137548897e243a9de4153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest using Guid(8adc20674ed137548897e243a9de4153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78a4fb28475e6404c300ef3caca4dd5') in 0.012809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/Environment/tileset.png
+  artifactKey: Guid(fa9008ba27d044823835d85918621932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/Environment/tileset.png using Guid(fa9008ba27d044823835d85918621932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75fcd164a469160389017a767bfcfeba') in 0.052261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.663089 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/hero/attack
+  artifactKey: Guid(7c4b7dfd2997c441c881acff3b4604fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/hero/attack using Guid(7c4b7dfd2997c441c881acff3b4604fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439ed772293fb1106ee008778453ad6a') in 0.019791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.537020 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back
+  artifactKey: Guid(8c9b5162764604426a30aca42ef9115f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back using Guid(8c9b5162764604426a30aca42ef9115f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9e8c21783f79ef672b7afb8be7201d') in 0.007379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.562448 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-1.png
+  artifactKey: Guid(269bf255a0807467391905647741fd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/hero/attack/hero-attack-back/hero-attack-back-1.png using Guid(269bf255a0807467391905647741fd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64644f953e721a730c36f7c07d273209') in 0.023954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.556309 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-1.png
+  artifactKey: Guid(b6844b89804364482afc9e85f4c7ead6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/hero/walk/hero-walk-back/hero-walk-back-1.png using Guid(b6844b89804364482afc9e85f4c7ead6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d159fb1e4ee56252af208f147204a6e') in 0.016212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.515899 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush-tall.png
+  artifactKey: Guid(aa94c6da14ecf4a8690f02549a9ac6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects/bush-tall.png using Guid(aa94c6da14ecf4a8690f02549a9ac6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18373c7a28031a53055621b4c15dd16') in 0.018130 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
