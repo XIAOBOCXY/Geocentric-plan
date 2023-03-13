@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="RoomNodeGraph",menuName ="Scriptable Object/Dungeon/Room Node Graph")] //添加Assets菜单按钮
+[CreateAssetMenu(fileName ="RoomNodeGraph",menuName ="Scriptable Objects/Dungeon/Room Node Graph")] //添加Assets菜单按钮
 public class RoomNodeGraphSO : ScriptableObject   //继承ScriptableObject类
 {
     [HideInInspector] public RoomNodeTypeListSO roomNodeTypeList;//房间节点类型的列表

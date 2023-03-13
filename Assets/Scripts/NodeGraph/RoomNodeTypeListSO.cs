@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "RoomNodeTypeListSO", menuName = "Scriptable Object/Dungeon/Room Node Type List")] //Ìí¼ÓAssets²Ëµ¥°´Å¥
+[CreateAssetMenu(fileName = "RoomNodeTypeListSO", menuName = "Scriptable Objects/Dungeon/Room Node Type List")] //Ìí¼ÓAssets²Ëµ¥°´Å¥
 public class RoomNodeTypeListSO : ScriptableObject  //¼Ì³ÐScriptableObjectÀà
 {
     #region Header ROOM NODE TYPE LIST
