@@ -67,6 +67,9 @@
     <Compile Include="Assets\Scripts\NodeGraph\RoomNodeSO.cs" />
     <Compile Include="Assets\Scripts\NodeGraph\RoomNodeGraphSO.cs" />
     <Compile Include="Assets\Scripts\Utilities\HelperUtilities.cs" />
+    <Compile Include="Assets\Scripts\Dungeon\DungeonLevelSO.cs" />
+    <Compile Include="Assets\Scripts\Misc\SingletonMonobehaviour.cs" />
+    <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

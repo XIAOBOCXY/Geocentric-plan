@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8014a14e2feacf541ae27b44ecab0537, type: 3}
+  m_Name: DungeonLevel_Level3
+  m_EditorClassIdentifier: 
+  levelName: Level3
+  roomTemplateList:
+  - {fileID: 11400000, guid: ca8fbb82f3c17824aa92d6d083203454, type: 2}
+  - {fileID: 11400000, guid: 1f565b55e5079bd4faafa3fffed23252, type: 2}
+  - {fileID: 11400000, guid: 3abe3af554ad3874e9a4dd2287631b3e, type: 2}
+  - {fileID: 11400000, guid: ec5a13a2a939c534bae648123455d9eb, type: 2}
+  - {fileID: 11400000, guid: f9131466ab5a36142a17bc197c1cc592, type: 2}
+  - {fileID: 11400000, guid: 54e3474304288b740bd356ed3cd85cf9, type: 2}
+  - {fileID: 11400000, guid: 095f1fd9500011240822da74bc99e5e3, type: 2}
+  - {fileID: 11400000, guid: 20674624c2db8e843bc9727a2a2ea873, type: 2}
+  - {fileID: 11400000, guid: 2745021a550a2644886ffe63766a8d28, type: 2}
+  - {fileID: 11400000, guid: 7f88ded814d7dba498d64c54d9464742, type: 2}
+  - {fileID: 11400000, guid: 251daad6d997a2f42bc1481a6f74a5ad, type: 2}
+  - {fileID: 11400000, guid: 1aea5c69712e79549ab8d3788c358a66, type: 2}
+  - {fileID: 11400000, guid: a49935291c90bb8419f12fefb1a6d3e9, type: 2}
+  - {fileID: 11400000, guid: 711dc60cb76817f4c9bfc82776b5807e, type: 2}
+  - {fileID: 11400000, guid: 9acae7ac4956d064a96f0c7033dbecee, type: 2}
+  - {fileID: 11400000, guid: ce7452c2ae22fc74d9e348129a833a2f, type: 2}
+  - {fileID: 11400000, guid: bafe1a025a4197145b799a0afcdee613, type: 2}
+  - {fileID: 11400000, guid: a2f89cc438f30644bbccd39a42a96a8c, type: 2}
+  - {fileID: 11400000, guid: 455e160bead9ecf41a60a216ce4a139f, type: 2}
+  - {fileID: 11400000, guid: 52600adc008e8454e8e34e9bb713ab31, type: 2}
+  - {fileID: 11400000, guid: dffb7e63da22ca84ea1ae610f531407e, type: 2}
+  - {fileID: 11400000, guid: f0247a0c7c848c740b7c1626202decd2, type: 2}
+  - {fileID: 11400000, guid: 6c8ff05fca9b85642b9d8c4361ed91c5, type: 2}
+  - {fileID: 11400000, guid: c7ac5a653e0cba248b73600b012e9e53, type: 2}
+  - {fileID: 11400000, guid: 5cc122ffa84affe42b412b1677ea420c, type: 2}
+  - {fileID: 11400000, guid: 4d5302ed95bb20144b852b5d1a0813cb, type: 2}
+  - {fileID: 11400000, guid: 0c0ed991a34818b48abb15b826fa692d, type: 2}
+  roomNodeGraphList:
+  - {fileID: 11400000, guid: 915665466106ea644b5172b127ecf52a, type: 2}
+  - {fileID: 11400000, guid: 24356cdf71d6db14aa7c0ee6d026ccbf, type: 2}
+  - {fileID: 11400000, guid: 087f4e161c26a3d4d83ddc777865a071, type: 2}
+  - {fileID: 11400000, guid: 10b8ce1b15a442a46bf2e0a00b23bb40, type: 2}
+  - {fileID: 11400000, guid: 0fd271bbe92010545a97e5f417606a5e, type: 2}

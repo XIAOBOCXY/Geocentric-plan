@@ -10,7 +10,7 @@ public static class HelperUtlities //不继承，并且改为静态类，静态类不会被实例化
     {
         if (stringToCheck == "")
         {
-            Debug.Log(fileName + "是空的,必须要放一个值在" + thisObject.name.ToString());
+            Debug.Log("在" + thisObject.name.ToString()+"中，"+fileName+ "是空的,必须要放一个值");
             return true;
         }
         return false;
@@ -20,18 +20,25 @@ public static class HelperUtlities //不继承，并且改为静态类，静态类不会被实例化
     {
         bool error = false;
         int count = 0;
+
+        if (enumerableObjectToCheck == null)
+        {
+            Debug.Log("对象" + thisObject.name.ToString() + "中" + fileName + "是null");
+            return true;
+        }
+
         foreach(var item in enumerableObjectToCheck)//遍历列表每一个值
         {
             if (item == null)//有null值
             {
-                Debug.Log(fileName + "有空值，在对象" + thisObject.name.ToString());
+                Debug.Log(fileName + "有空值，在对象" + thisObject.name.ToString()+"中");
                 error = true;//返回true
             }
             else count++;
         }
         if (count == 0)//列表为空
         {
-            Debug.Log(fileName + "没有值，在对象" + thisObject.name.ToString());
+            Debug.Log(fileName + "没有值，在对象" + thisObject.name.ToString()+"中");
             error = true;
         }
         return error;
