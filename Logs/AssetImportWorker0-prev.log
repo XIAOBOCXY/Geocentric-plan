@@ -15,11 +15,11 @@ E:/GraduationDesign/Geocentric-plan
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9729
+7928
 Successfully changed project path to: E:/GraduationDesign/Geocentric-plan
 E:/GraduationDesign/Geocentric-plan
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 396.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 374.88 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1c1 (4e944ebb9621)
 [Subsystems] Discovering subsystems at path E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Resources/UnitySubsystems
@@ -36,258 +36,192 @@ Initialize mono
 Mono path[0] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Managed'
 Mono path[1] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002457 seconds.
+Registered in 0.005122 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 272.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2431.69 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.050 seconds
+- Completed reload, in  7.077 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003826 seconds.
+Registered in 0.006114 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 333.66 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 280.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.998 seconds
+- Completed reload, in  6.267 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 2.91 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.46 seconds
+Refreshing native plugins compatible for Editor in 2.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2233 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.3 MB.
-System memory in use after: 130.3 MB.
+Unloading 2236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.4 MB.
+System memory in use after: 130.5 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2690.
-Total: 3.677300 ms (FindLiveObjects: 0.305300 ms CreateObjectMapping: 0.195200 ms MarkObjects: 3.064400 ms  DeleteObjects: 0.110900 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2693.
+Total: 2.962200 ms (FindLiveObjects: 0.242000 ms CreateObjectMapping: 0.126300 ms MarkObjects: 2.488600 ms  DeleteObjects: 0.104000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/SmallRoom_MyRoom_2.prefab
-  artifactKey: Guid(c0aeacfeaadae52419d7ad73cf56745d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/SmallRoom_MyRoom_2.prefab using Guid(c0aeacfeaadae52419d7ad73cf56745d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6850b40c9decac1ef8d6c0ee0a2306') in 0.082458 seconds 
+  path: Assets/Scripts/Dungeon/Doorway.cs
+  artifactKey: Guid(8b05a59b79c647f468f2585d97e1da3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/Doorway.cs using Guid(8b05a59b79c647f468f2585d97e1da3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99628a26f777a5b32d8a26103d825b8') in 0.072338 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 89.703673 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_SmallRoom_MyRoom_2.asset
-  artifactKey: Guid(0c0ed991a34818b48abb15b826fa692d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_SmallRoom_MyRoom_2.asset using Guid(0c0ed991a34818b48abb15b826fa692d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) doorwayList没有值，在对象Room_SmallRoom_MyRoom_2
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:63)
+  Time since last request: 23.713576 seconds.
+  path: Assets/Scripts/Dungeon/Room.cs
+  artifactKey: Guid(b5868a76f228acd46bafb9eb8b6a0927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/Room.cs using Guid(b5868a76f228acd46bafb9eb8b6a0927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e719f8b082693c1f2e69db8af40dc1') in 0.023928 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003364 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.173 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2111 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.0 MB.
+System memory in use after: 122.1 MB.
 
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2696.
+Total: 2.659600 ms (FindLiveObjects: 0.238900 ms CreateObjectMapping: 0.121300 ms MarkObjects: 2.269500 ms  DeleteObjects: 0.028800 ms)
 
-spawnPositionArray没有值，在对象Room_SmallRoom_MyRoom_2
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:65)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
- -> (artifact id: '5d160ba73bb44affc719d2afc9d42b39') in 0.017807 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1020.025303 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MediumRoom_MyRoom_1.prefab
-  artifactKey: Guid(a944147a4dcf3104cbe873e5b3f33f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MediumRoom_MyRoom_1.prefab using Guid(a944147a4dcf3104cbe873e5b3f33f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e6145ab4298de815424ae8488fc6c6') in 0.017878 seconds 
+  Time since last request: 719.961292 seconds.
+  path: Assets/Scripts/Dungeon/Room.cs
+  artifactKey: Guid(b5868a76f228acd46bafb9eb8b6a0927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/Room.cs using Guid(b5868a76f228acd46bafb9eb8b6a0927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d9389d507e16ebd7fbc82a089ebe60') in 0.015729 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 53.973275 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_MediumRoom_MyRoom_1.asset
-  artifactKey: Guid(5cc122ffa84affe42b412b1677ea420c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_MediumRoom_MyRoom_1.asset using Guid(5cc122ffa84affe42b412b1677ea420c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) doorwayList没有值，在对象Room_MediumRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:63)
+  Time since last request: 115.497031 seconds.
+  path: Assets/Scripts/Dungeon/InstantiatedRoom.cs
+  artifactKey: Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/InstantiatedRoom.cs using Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cecc429a0dcc320c2a8c1ed2fc07b77a') in 0.012526 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003128 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.577 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.0 MB.
+System memory in use after: 122.1 MB.
 
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2699.
+Total: 3.047400 ms (FindLiveObjects: 0.248700 ms CreateObjectMapping: 0.132100 ms MarkObjects: 2.636800 ms  DeleteObjects: 0.028000 ms)
 
-spawnPositionArray没有值，在对象Room_MediumRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:65)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
- -> (artifact id: '3f7a1a0c872b0f541410ae8ec0f45439') in 0.008676 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 887.329680 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/LargeRoom_MyRoom_1.prefab
-  artifactKey: Guid(3a933f03f8b55a34aaa3975d92cda715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/LargeRoom_MyRoom_1.prefab using Guid(3a933f03f8b55a34aaa3975d92cda715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf577d7d1afef111b8c4ea0c2984887') in 0.014356 seconds 
+  Time since last request: 90.752030 seconds.
+  path: Assets/Scripts/Dungeon/RoomTemplateSO.cs
+  artifactKey: Guid(984f0aaa0cda2f74988101a125f8bc0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/RoomTemplateSO.cs using Guid(984f0aaa0cda2f74988101a125f8bc0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5e076134c9051e558bdee7f50f8cc2') in 0.013315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 110.302780 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_LargeRoom_MyRoom_1.asset
-  artifactKey: Guid(c7ac5a653e0cba248b73600b012e9e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_LargeRoom_MyRoom_1.asset using Guid(c7ac5a653e0cba248b73600b012e9e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) doorwayList没有值，在对象Room_LargeRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:63)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
-spawnPositionArray没有值，在对象Room_LargeRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:65)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
- -> (artifact id: '31c2abbca36d986101c9f6ae9b03f626') in 0.013799 seconds 
+  Time since last request: 54.738332 seconds.
+  path: Assets/Scripts/Dungeon/Room.cs
+  artifactKey: Guid(b5868a76f228acd46bafb9eb8b6a0927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/Room.cs using Guid(b5868a76f228acd46bafb9eb8b6a0927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb195a17710ad307475ce99677854a3b') in 0.010507 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 268.256503 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_Entrance_MyRoom_1.asset
-  artifactKey: Guid(6c8ff05fca9b85642b9d8c4361ed91c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_Entrance_MyRoom_1.asset using Guid(6c8ff05fca9b85642b9d8c4361ed91c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) doorwayList没有值，在对象Room_Entrance_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:63)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
-spawnPositionArray没有值，在对象Room_Entrance_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:65)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
- -> (artifact id: 'a49029eef8caced59c03239cb079895e') in 0.009715 seconds 
+  Time since last request: 312.267532 seconds.
+  path: Assets/MyAssets/shaders
+  artifactKey: Guid(d00b90337edae7c48911f5db64bcd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/shaders using Guid(d00b90337edae7c48911f5db64bcd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492bca50b7a6a84f49e689024b7ae8c7') in 0.012264 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 363.254790 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/Entrance_MyRoom_1.prefab
-  artifactKey: Guid(7871bcbe296ed8a47be9077e0b38f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/Entrance_MyRoom_1.prefab using Guid(7871bcbe296ed8a47be9077e0b38f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd257494652b1d18e425979a3aea0c5') in 0.012763 seconds 
+  Time since last request: 209.576038 seconds.
+  path: Assets/MyAssets/shaders/DungeonLightShader_Variable.shadergraph
+  artifactKey: Guid(df0fab498f42155408b996839579605b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/shaders/DungeonLightShader_Variable.shadergraph using Guid(df0fab498f42155408b996839579605b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83446b8663743fa0811abe74e1e092b2') in 0.051410 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 218.321314 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_ChestRoom_MyRoom_1.asset
-  artifactKey: Guid(1f565b55e5079bd4faafa3fffed23252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_ChestRoom_MyRoom_1.asset using Guid(1f565b55e5079bd4faafa3fffed23252) Importer(815301076,1909f56bfc062723c751e8b465ee728b) doorwayList没有值，在对象Room_ChestRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:63)
+  Time since last request: 1625.429942 seconds.
+  path: Assets/MyAssets/shaders/DungeonLightShader_Variable.shadergraph
+  artifactKey: Guid(df0fab498f42155408b996839579605b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/shaders/DungeonLightShader_Variable.shadergraph using Guid(df0fab498f42155408b996839579605b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b9a9753c7fbf3f70be35718eae5dc1') in 0.008414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 126.889206 seconds.
+  path: Assets/Scripts/NodeGraph/RoomNodeGraphSO.cs
+  artifactKey: Guid(57ad7f79487f3014a9c3773d7d6cfaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/RoomNodeGraphSO.cs using Guid(57ad7f79487f3014a9c3773d7d6cfaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0bff3d990f566f2e1c5c399a4ddad4') in 0.023814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.685029 seconds.
+  path: Assets/Scripts/NodeGraph/RoomNodeGraphSO.cs
+  artifactKey: Guid(57ad7f79487f3014a9c3773d7d6cfaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NodeGraph/RoomNodeGraphSO.cs using Guid(57ad7f79487f3014a9c3773d7d6cfaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd557b444a2256e23a6140f86b7f812a') in 0.003330 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009932 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.368 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.1 MB.
+System memory in use after: 122.2 MB.
 
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2701.
+Total: 3.900500 ms (FindLiveObjects: 0.225400 ms CreateObjectMapping: 0.140100 ms MarkObjects: 3.409200 ms  DeleteObjects: 0.123900 ms)
 
-spawnPositionArray没有值，在对象Room_ChestRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:65)
+========================================================================
+Received Import Request.
+  Time since last request: 612.019541 seconds.
+  path: Assets/Scripts/Misc/Settings.cs
+  artifactKey: Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Misc/Settings.cs using Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974b86670a1f4eaba87409dcf7782d47') in 0.021819 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003118 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.187 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.1 MB.
+System memory in use after: 122.2 MB.
 
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2703.
+Total: 3.261900 ms (FindLiveObjects: 0.223100 ms CreateObjectMapping: 0.127400 ms MarkObjects: 2.884400 ms  DeleteObjects: 0.025800 ms)
 
- -> (artifact id: 'caf9f11fe249d6fb79ca5116afc4a473') in 0.023235 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.262878 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/ChestRoom_MyRoom_1.prefab
-  artifactKey: Guid(ed540cffb60bb9e42991640fdb8de209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/ChestRoom_MyRoom_1.prefab using Guid(ed540cffb60bb9e42991640fdb8de209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc88d5099f385b845e2958cd8f7af31') in 0.015480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1227.955371 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/ChestRoom_MyRoom_1.prefab
-  artifactKey: Guid(ed540cffb60bb9e42991640fdb8de209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/ChestRoom_MyRoom_1.prefab using Guid(ed540cffb60bb9e42991640fdb8de209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cadbfcccb1b0003b9d678be6f333d90') in 0.032792 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 929.014816 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_ChestRoom_MyRoom_1.asset
-  artifactKey: Guid(1f565b55e5079bd4faafa3fffed23252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_ChestRoom_MyRoom_1.asset using Guid(1f565b55e5079bd4faafa3fffed23252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6293739d62a93b275a6260ae2ddd69') in 0.024910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1445.147403 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/BossRoom_MyRoom_1.prefab
-  artifactKey: Guid(4c35a421f50fde14db9930095df6e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/BossRoom_MyRoom_1.prefab using Guid(4c35a421f50fde14db9930095df6e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e0dda149ed5050aaca29a818e28389') in 0.030448 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 115.645423 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/BossRoom_MyRoom_1.prefab
-  artifactKey: Guid(4c35a421f50fde14db9930095df6e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/BossRoom_MyRoom_1.prefab using Guid(4c35a421f50fde14db9930095df6e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea23dccdf8627b7fc1492c5ee71dbdd8') in 0.017088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.599974 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/BossRoom_MyRoom_1.prefab
-  artifactKey: Guid(4c35a421f50fde14db9930095df6e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/BossRoom_MyRoom_1.prefab using Guid(4c35a421f50fde14db9930095df6e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbf2be581e14e20ad1b68432e389e56') in 0.017586 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 68.696586 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_BossRoom_MyRoom_1.asset
-  artifactKey: Guid(ca8fbb82f3c17824aa92d6d083203454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_BossRoom_MyRoom_1.asset using Guid(ca8fbb82f3c17824aa92d6d083203454) Importer(815301076,1909f56bfc062723c751e8b465ee728b) doorwayList没有值，在对象Room_BossRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:63)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
-spawnPositionArray没有值，在对象Room_BossRoom_MyRoom_1
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckEnumerableValues (UnityEngine.Object,string,System.Collections.IEnumerable) (at Assets/Scripts/Utilities/HelperUtilities.cs:34)
-RoomTemplateSO:OnValidate () (at Assets/Scripts/Dungeon/RoomTemplateSO.cs:65)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 34)
-
- -> (artifact id: '3b37f604ca2420babd849242ebc6717f') in 0.011074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 141.618168 seconds.
-  path: Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_BossRoom_MyRoom_1.asset
-  artifactKey: Guid(ca8fbb82f3c17824aa92d6d083203454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjectAssets/Dungeon/Rooms/MyRooms/Room_BossRoom_MyRoom_1.asset using Guid(ca8fbb82f3c17824aa92d6d083203454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe6e21ac846d6eecb5c5929ae0cafb5') in 0.018453 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -3,7 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public class Doorway
 {
-    public Vector2 position;
+    public Vector2Int position;
     public Orientation orientation;
     public GameObject doorPrefab;
 

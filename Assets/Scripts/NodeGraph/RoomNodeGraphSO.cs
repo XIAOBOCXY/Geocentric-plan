@@ -29,6 +29,20 @@ public class RoomNodeGraphSO : ScriptableObject   //继承ScriptableObject类
         }
     }
 
+    //通过roomnodetype获取room node
+    public RoomNodeSO GetRoomNode(RoomNodeTypeSO roomNodeType)
+    {
+        foreach(RoomNodeSO node in roomNodeList)
+        {
+            if (node.roomNodeType == roomNodeType)
+            {
+                return node;
+            }
+        }
+        return null;
+    }
+
+
     //通过roomnode ID获取room node
     public RoomNodeSO GetRoomNode(string roomNodeID)
     {
@@ -38,6 +52,16 @@ public class RoomNodeGraphSO : ScriptableObject   //继承ScriptableObject类
             return roomNode;
         }
         return null;
+    }
+
+
+    //获得传入的父房间节点的所有子房间节点
+    public IEnumerable<RoomNodeSO> GetChildRoomNodes(RoomNodeSO parentRoomNode)
+    {
+        foreach(string childNodeID in parentRoomNode.childRoomNodeIDList)
+        {
+            yield return GetRoomNode(childNodeID);
+        }
     }
 
     #region Editor Code

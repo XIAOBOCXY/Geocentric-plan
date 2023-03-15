@@ -54,7 +54,12 @@ public class GameManager : SingletonMonobehaviour<GameManager>
     //开始地牢当前level
     private void playDungeonLevel(int dungeonLevelListIndex)
     {
-
+        //为当前level创建dungeon
+        bool dungeonBuiltSuccessfully = DungeonBuilder.Instance.GenerateDungeon(dungeonLevelList[dungeonLevelListIndex]);
+        if (!dungeonBuiltSuccessfully)
+        {
+            Debug.Log("创建失败");
+        }
     }
 
     #region Validation

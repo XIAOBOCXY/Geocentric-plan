@@ -27,4 +27,14 @@ public class GameResources : MonoBehaviour
     #endregion
 
     public RoomNodeTypeListSO roomNodeTypeList;
+
+
+    #region Header MATERIALS
+    [Space(10)]
+    [Header("MATERIALS")]
+    #endregion
+    #region Tooltip
+    [Tooltip("±ä°µµÄ²ÄÖÊ")]
+    #endregion
+    public Material dimmerMaterial;
 }
