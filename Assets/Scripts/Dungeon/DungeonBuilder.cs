@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 [DisallowMultipleComponent]
 public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
@@ -401,6 +402,7 @@ public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
         Room room = new Room();
         room.templateID = roomTemplate.guid;
         room.id = roomNode.id;
+        room.prefab = roomTemplate.prefab;
         room.roomNodeType = roomTemplate.roomNodeType;
         room.lowerBounds = roomTemplate.lowerBounds;
         room.upperBounds = roomTemplate.upperBounds;
@@ -442,7 +444,21 @@ public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
     //从预制体中实例化房间游戏对象
     private void InstantiateRoomGameobjects()
     {
-
+        //循环遍历room
+        foreach (KeyValuePair<string,Room> keyValuePair in dungeonBuilderRoomDictionary)
+        {
+            Room room = keyValuePair.Value;
+            //计算房间位置
+            Vector3 roomPosition = new Vector3(room.lowerBounds.x - room.templateLowerBounds.x, room.lowerBounds.y - room.templateLowerBounds.y, 0f);
+            //实例化房间
+            GameObject roomGameobject = Instantiate(room.prefab, roomPosition, Quaternion.identity, transform);
+            //从实例化预制物获得实例化房间组件
+            InstantiatedRoom instantiatedRoom = roomGameobject.GetComponentInChildren<InstantiatedRoom>();
+            instantiatedRoom.room = room;
+            //初始化实例化的房间
+            instantiatedRoom.Initialise(roomGameobject);
+            room.instantiatedRoom = instantiatedRoom;
+        }
     }
 
     //通过房间模板id获得房间模板，如果不存在返回null

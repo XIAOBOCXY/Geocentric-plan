@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomNodeTypeList: {fileID: 11400000, guid: 5cdbfc564394df34aaede53cbfb17704, type: 2}
+  dimmerMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
