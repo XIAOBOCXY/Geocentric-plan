@@ -31,6 +31,8 @@ public class InstantiatedRoom : MonoBehaviour
     {
         //填充tilemap和grid 变量
         PopulateTilemapMemberbariables(roomGameobject);
+        //封住没有用的门
+        BlockOffUnusedDoorWays();
         //禁止碰撞瓦片地图渲染器
         DisableCollisionTilemapRenderer();
     }
@@ -71,6 +73,105 @@ public class InstantiatedRoom : MonoBehaviour
             }
         }
     }
+
+
+    //封住没有用的门
+    private void BlockOffUnusedDoorWays()
+    {
+        //循环所有的门
+        foreach (Doorway doorway in room.doorWayList)
+        {
+            if (doorway.isConnected)
+            {
+                continue;
+            }
+            //使用tilemap的tiles来封锁没使用的门
+            if (collisionTilemap != null)
+            {
+                BlockADoorwayOnTilemapLayer(collisionTilemap, doorway);
+            }
+            if (minimapTilemap != null)
+            {
+                BlockADoorwayOnTilemapLayer(minimapTilemap, doorway);
+            }
+            if (groundTilemap != null)
+            {
+                BlockADoorwayOnTilemapLayer(groundTilemap, doorway);
+            }
+            if (decoration1Tilemap != null)
+            {
+                BlockADoorwayOnTilemapLayer(decoration1Tilemap, doorway);
+            }
+            if (decoration2Tilemap != null)
+            {
+                BlockADoorwayOnTilemapLayer(decoration2Tilemap, doorway);
+            }
+            if (frontTilemap != null)
+            {
+                BlockADoorwayOnTilemapLayer(frontTilemap, doorway);
+            }
+        }
+    }
+
+    //在图层上封住门
+    private void BlockADoorwayOnTilemapLayer(Tilemap tilemap,Doorway doorway)
+    {
+        switch (doorway.orientation)
+        {
+            case Orientation.north:
+            case Orientation.south:
+                BlockDoorwayHorizontally(tilemap, doorway);
+                break;
+            case Orientation.east:
+            case Orientation.west:
+                BlockDoorwayVertically(tilemap, doorway);
+                break;
+            case Orientation.none:
+                break;
+        }
+    }
+
+    //封锁南北的门
+    private void BlockDoorwayHorizontally(Tilemap tilemap,Doorway doorway)
+    {
+        //在房间模板中获取的房间门起始复制的左上角坐标
+        Vector2Int startPosition = doorway.doorwayStartCopyPosition;
+        //循环所有要添加的tiles
+        for (int xPos = 0; xPos < doorway.doorwayCopyTileWidth; xPos++)
+        {
+            for (int yPos = 0; yPos < doorway.doorwayCopyTileHeight; yPos++)
+            {
+                //获取瓦片的变换矩阵
+                Matrix4x4 transformMatrix = tilemap.GetTransformMatrix(new Vector3Int(startPosition.x + xPos, startPosition.y - yPos, 0));
+                //设置tile(瓦片在 Tilemap 上的位置,要置于单元格处的 Tile)
+                tilemap.SetTile(new Vector3Int(startPosition.x + 1 + xPos, startPosition.y - yPos, 0), tilemap.GetTile(new Vector3Int(startPosition.x + xPos, startPosition.y - yPos, 0)));
+                //设置瓦片(瓦片在 Tilemap 上的位置,变换矩阵)
+                tilemap.SetTransformMatrix(new Vector3Int(startPosition.x + 1 + xPos, startPosition.y - yPos, 0), transformMatrix);
+            }
+        }
+    }
+
+    //封锁东西的门
+    private void BlockDoorwayVertically(Tilemap tilemap, Doorway doorway)
+    {
+        //在房间模板中获取的房间门起始复制的左上角坐标
+        Vector2Int startPosition = doorway.doorwayStartCopyPosition;
+        //循环所有要添加的tiles
+        for (int xPos = 0; xPos < doorway.doorwayCopyTileWidth; xPos++)
+        {
+            for (int yPos = 0; yPos < doorway.doorwayCopyTileHeight; yPos++)
+            {
+                //获取瓦片的变换矩阵
+                Matrix4x4 transformMatrix = tilemap.GetTransformMatrix(new Vector3Int(startPosition.x + xPos, startPosition.y - yPos, 0));
+                //设置tile(瓦片在 Tilemap 上的位置,要置于单元格处的 Tile)
+                tilemap.SetTile(new Vector3Int(startPosition.x + xPos, startPosition.y - 1 - yPos, 0), tilemap.GetTile(new Vector3Int(startPosition.x + xPos, startPosition.y - yPos, 0)));
+                //设置瓦片(瓦片在 Tilemap 上的位置,变换矩阵)
+                tilemap.SetTransformMatrix(new Vector3Int(startPosition.x + xPos, startPosition.y - 1 - yPos, 0), transformMatrix);
+            }
+        }
+    }
+
+
     //禁止碰撞瓦片地图渲染器
     private void DisableCollisionTilemapRenderer()
     {
