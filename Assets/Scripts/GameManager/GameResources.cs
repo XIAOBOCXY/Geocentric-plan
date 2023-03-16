@@ -29,6 +29,16 @@ public class GameResources : MonoBehaviour
     public RoomNodeTypeListSO roomNodeTypeList;
 
 
+    #region Header Player
+    [Space(10)]
+    [Header("PLAYER")]
+    #endregion
+    #region Tooltip
+    [Tooltip("当前选择的玩家")]
+    #endregion
+
+    public CurrentPlayerSO currentPlayer;
+
     #region Header MATERIALS
     [Space(10)]
     [Header("MATERIALS")]
