@@ -19,7 +19,33 @@ public class GameManager : SingletonMonobehaviour<GameManager>
     #endregion Tooltip
     [SerializeField] private int currentDungeonLevelListIndex = 0;
 
+    private Room currentRoom;
+    private Room previousRoom;
+    private PlayerDetailsSO playerDetails;
+    private Player player;
+
+
     [HideInInspector] public GameState gameState;
+
+
+    protected override void Awake()
+    {
+        base.Awake();
+        //设置玩家详细信息
+        playerDetails = GameResources.Instance.currentPlayer.playerDetails;
+        //实例化player
+        InstantiatePlayer();
+    }
+
+    //实例化player
+    private void InstantiatePlayer()
+    {
+        //实例化player
+        GameObject playerGameObject = Instantiate(playerDetails.playerPrefab);
+        //初始化player
+        player = playerGameObject.GetComponent<Player>();
+        player.Initialize(playerDetails);
+    }
 
     private void Start()
     {
@@ -51,6 +77,13 @@ public class GameManager : SingletonMonobehaviour<GameManager>
                 break;
         }
     }
+    //设置玩家进入当前的房间
+    public void SetCurrentRoom(Room room)
+    {
+        previousRoom = currentRoom;
+        currentRoom = room;
+    }
+
     //开始地牢当前level
     private void playDungeonLevel(int dungeonLevelListIndex)
     {
@@ -60,8 +93,24 @@ public class GameManager : SingletonMonobehaviour<GameManager>
         {
             Debug.Log("创建失败");
         }
+        // 设置玩家在当前房间的正中间
+        player.gameObject.transform.position = new Vector3((currentRoom.lowerBounds.x + currentRoom.upperBounds.x) / 2f, (currentRoom.lowerBounds.y + currentRoom.upperBounds.y) / 2f, 0f);
+
+        // 获取距离玩家最近的 spawn point 
+        player.gameObject.transform.position = HelperUtlities.GetSpawnPositionNearestToPlayer(player.gameObject.transform.position);
     }
 
+    //获取player
+    public Player GetPlayer()
+    {
+        return player;
+    }
+
+    //获取player现在在的房间
+    public Room GetCurrentRoom()
+    {
+        return currentRoom;
+    }
     #region Validation
 #if UNITY_EDITOR
     private void OnValidate()

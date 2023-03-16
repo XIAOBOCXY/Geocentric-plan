@@ -418,6 +418,8 @@ public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
         {
             room.parentRoomID = "";
             room.isPreviouslyVisited = true;
+            //ÉèÖÃÈë¿Ú
+            GameManager.Instance.SetCurrentRoom(room);
         }
         else
         {

@@ -305,6 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400525579}
   - component: {fileID: 400525578}
+  - component: {fileID: 400525580}
   m_Layer: 0
   m_Name: CinemachineTargetGroup
   m_TagString: Untagged
@@ -342,6 +343,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400525580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400525577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8feffe2c9e6eeac42a16438da75556f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &917294638
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +523,7 @@ MonoBehaviour:
     ModeOverride: 1
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7181515, y: 1}
+    m_SensorSize: {x: 1.3920658, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

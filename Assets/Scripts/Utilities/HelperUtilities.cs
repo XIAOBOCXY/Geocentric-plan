@@ -82,4 +82,32 @@ public static class HelperUtlities //不继承，并且改为静态类，静态类不会被实例化
         }
         return error;
     }
+
+    //获取距离玩家最近的spawn position
+    public static Vector3 GetSpawnPositionNearestToPlayer(Vector3 playerPosition)
+    {
+        //当前房间
+        Room currentRoom = GameManager.Instance.GetCurrentRoom();
+
+        //当前房间的网格坐标
+        Grid grid = currentRoom.instantiatedRoom.grid;
+        //初始化最近距离
+        Vector3 nearestSpawnPosition = new Vector3(10000f, 10000f, 0f);
+
+        //循环遍历当前房间的所有spwan position数组
+        foreach (Vector2Int spawnPositionGrid in currentRoom.spawnPositionArray)
+        {
+            // spwan position是网格坐标，我们需要将它转换为世界坐标
+            Vector3 spawnPositionWorld = grid.CellToWorld((Vector3Int)spawnPositionGrid);
+
+            //比较找出最近的spawn position
+            if (Vector3.Distance(spawnPositionWorld, playerPosition) < Vector3.Distance(nearestSpawnPosition, playerPosition))
+            {
+                //更新最近的spawn position
+                nearestSpawnPosition = spawnPositionWorld;
+            }
+        }
+        return nearestSpawnPosition;
+    }
+
 }

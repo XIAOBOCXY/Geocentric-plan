@@ -52,5 +52,5 @@ MonoBehaviour:
     isConnected: 0
     isUnavailable: 0
   spawnPositionArray:
-  - {x: -62, y: 14}
-  - {x: -56, y: 2}
+  - {x: -61, y: 10}
+  - {x: -56, y: 3}
