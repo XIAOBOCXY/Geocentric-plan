@@ -1,5 +1,5 @@
 
-
+//房间门方向
 public enum Orientation
 { 
     north,
@@ -8,6 +8,19 @@ public enum Orientation
     west,
     none
 }
+
+//射击方向
+public enum AimDirection
+{
+    Up,
+    UpRight,
+    UpLeft,
+    Right,
+    Left,
+    Down
+}
+
+//游戏状态
 public enum GameState
 {
     gameStarted,
