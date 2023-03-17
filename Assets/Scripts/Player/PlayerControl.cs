@@ -8,17 +8,36 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private Transform weaponShootPosition;
     private Player player;
     private float moveSpeed;
+
+    private Coroutine playerRollCoroutine;//协程
+    private WaitForFixedUpdate waitForFixedUpdate;//等待，直到下一个固定帧率更新函数
+    private float playerRollCooldownTimer = 0f;
+    public bool isPlayerRolling = false;
+
+
     private void Awake()
     {
         player = GetComponent<Player>();
         moveSpeed = movementDetails.GetMoveSpeed();
     }
+
+    private void Start()
+    {
+        //创建waitforfixed update供协程使用
+        waitForFixedUpdate = new WaitForFixedUpdate();
+
+    }
+
     private void Update()
     {
+        //正在滚动
+        if (isPlayerRolling) return;
         //处理玩家移动
         MovementInput();
         //处理武器
         WeaponInput();
+        //玩家滚动冷却
+        PlayerRollCooldownTimer();
 
     }
 
@@ -30,6 +49,8 @@ public class PlayerControl : MonoBehaviour
         //2.Horizontal  对应键盘上面的左右箭头，当按下左或右箭头时触发
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
+        //鼠标右键按下
+        bool rightMouseButtonDown = Input.GetMouseButtonDown(1);
 
 
         //根据键盘的输入得到方向向量
@@ -41,17 +62,68 @@ public class PlayerControl : MonoBehaviour
             direction *= 0.7f;
         }
 
-        //按下了键盘，方向向量不为0
+        //按下了键盘或鼠标，方向向量不为0
         if (direction != Vector2.zero)
         {
-            //调用移动事件
-            player.movementByVelocityEvent.CallMovementByVelocityEvent(direction, moveSpeed);
+            if (!rightMouseButtonDown)
+            {
+                //调用移动事件
+                player.movementByVelocityEvent.CallMovementByVelocityEvent(direction, moveSpeed);
+            }
+            // 如果不在滚动冷却时间，就滚
+            else if (playerRollCooldownTimer <= 0f)
+            {
+                PlayerRoll((Vector3)direction);
+            }
 
         }
         //没有移动，调用空闲事件
         else
         {
             player.idleEvent.CallIdleEvent();
+        }
+    }
+
+    //玩家滚动
+    private void PlayerRoll(Vector3 direction)
+    {
+        //开始协程
+        playerRollCoroutine = StartCoroutine(PlayerRollRoutine(direction));
+    }
+
+    //玩家滚动协程
+    private IEnumerator PlayerRollRoutine(Vector3 direction)
+    {
+        //退出协程的最小距离
+        float minDistance = 0.2f;
+        //设置正在滚动
+        isPlayerRolling = true;
+        //计算滚动目标位置
+        Vector3 targetPosition = player.transform.position + (Vector3)direction * movementDetails.rollDistance;
+        //当小于最小距离时退出
+        while (Vector3.Distance(player.transform.position, targetPosition) > minDistance)
+        {
+            //目标位置，玩家位置，滚动速度，方向，正在滚动参数
+            player.movementToPositionEvent.CallMovementToPositionEvent(targetPosition, player.transform.position, movementDetails.rollSpeed, direction, isPlayerRolling);
+            yield return waitForFixedUpdate;
+
+        }
+
+        isPlayerRolling = false;
+
+        //设置冷却时间
+        playerRollCooldownTimer = movementDetails.rollCooldownTime;
+        player.transform.position = targetPosition;
+
+    }
+
+    //玩家冷却时间
+    private void PlayerRollCooldownTimer()
+    {
+        if (playerRollCooldownTimer >= 0f)
+        {
+            //Time.deltaTime 当前帧和上一帧之间的时间
+            playerRollCooldownTimer -= Time.deltaTime;
         }
     }
 
@@ -86,6 +158,31 @@ public class PlayerControl : MonoBehaviour
 
         // 调用武器射击事件
         player.aimWeaponEvent.CallAimWeaponEvent(playerAimDirection, playerAngleDegrees, weaponAngleDegrees, weaponDirection);
+    }
+
+    //进入碰撞器
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //停止玩家滚动
+        StopPlayerRollRoutine();
+    }
+
+    //停留碰撞器
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //停止玩家滚动
+        StopPlayerRollRoutine();
+    }
+
+    //停止玩家滚动
+    private void StopPlayerRollRoutine()
+    {
+        if (playerRollCoroutine != null)
+        {
+            StopCoroutine(playerRollCoroutine);
+
+            isPlayerRolling = false;
+        }
     }
 
     #region Validation

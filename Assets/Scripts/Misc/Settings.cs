@@ -24,5 +24,9 @@ public static class Settings//添加static,将其改为静态方法，删除MonoBehaviour脚本
     public static int aimLeft = Animator.StringToHash("aimLeft");
     public static int isIdle = Animator.StringToHash("isIdle");
     public static int isMoving = Animator.StringToHash("isMoving");
+    public static int rollUp = Animator.StringToHash("rollUp");
+    public static int rollRight = Animator.StringToHash("rollRight");
+    public static int rollLeft = Animator.StringToHash("rollLeft");
+    public static int rollDown = Animator.StringToHash("rollDown");
     #endregion
 }
