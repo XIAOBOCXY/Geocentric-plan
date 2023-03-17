@@ -136,6 +136,66 @@ public static class HelperUtlities //不继承，并且改为静态类，静态类不会被实例化
         return error;
     }
 
+    //检查浮点数是否为正数或0,不符合返回true
+    public static bool ValidateCheckPositiveValue(Object thisObject, string fieldName, float valueToCheck, bool isZeroAllowed)
+    {
+        bool error = false;
+
+        if (isZeroAllowed)
+        {
+            if (valueToCheck < 0)
+            {
+                Debug.Log(thisObject.name.ToString() + "中，" + fieldName + "必须是正数或者0");
+                error = true;
+            }
+        }
+        else
+        {
+            if (valueToCheck <= 0)
+            {
+                Debug.Log(thisObject.name.ToString() + "中，" + fieldName + "必须是正数");
+                error = true;
+            }
+        }
+
+        return error;
+    }
+
+    //判断范围（整数）是否是正数
+    public static bool ValidateCheckPositiveRange(Object thisObject, string fieldNameMinimum, float valueToCheckMinimum, string fieldNameMaximum, float valueToCheckMaximum, bool isZeroAllowed)
+    {
+        bool error = false;
+        if (valueToCheckMinimum > valueToCheckMaximum)
+        {
+            Debug.Log(thisObject.name.ToString()+"中，"+fieldNameMinimum + " 必须小于" + fieldNameMaximum );
+            error = true;
+        }
+
+        if (ValidateCheckPositiveValue(thisObject, fieldNameMinimum, valueToCheckMinimum, isZeroAllowed)) error = true;
+
+        if (ValidateCheckPositiveValue(thisObject, fieldNameMaximum, valueToCheckMaximum, isZeroAllowed)) error = true;
+
+        return error;
+    }
+
+    //判断范围（浮点数）是否是正数
+    public static bool ValidateCheckPositiveRange(Object thisObject, string fieldNameMinimum, int valueToCheckMinimum, string fieldNameMaximum, int valueToCheckMaximum, bool isZeroAllowed)
+    {
+        bool error = false;
+        if (valueToCheckMinimum > valueToCheckMaximum)
+        {
+            Debug.Log(thisObject.name.ToString() + "中，" + fieldNameMinimum + " 必须小于" + fieldNameMaximum);
+            error = true;
+        }
+
+        if (ValidateCheckPositiveValue(thisObject, fieldNameMinimum, valueToCheckMinimum, isZeroAllowed)) error = true;
+
+        if (ValidateCheckPositiveValue(thisObject, fieldNameMaximum, valueToCheckMaximum, isZeroAllowed)) error = true;
+
+        return error;
+    }
+
+
     //获取距离玩家最近的spawn position
     public static Vector3 GetSpawnPositionNearestToPlayer(Vector3 playerPosition)
     {

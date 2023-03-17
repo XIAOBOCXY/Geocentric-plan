@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: collosion_4
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -548778455960895360, guid: 93d06f6972cf37f4c8d3e9cc98a199db, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

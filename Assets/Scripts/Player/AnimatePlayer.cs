@@ -14,6 +14,9 @@ public class AnimatePlayer : MonoBehaviour
 
     private void OnEnable()
     {
+        //订阅movement by velocity event
+        player.movementByVelocityEvent.OnMovementByVelocity += MovementByVelocityEvent_OnMovementByVelocity;
+
         //订阅idle event
         player.idleEvent.OnIdle += IdleEvent_OnIdle;
         //订阅weapon aim event
@@ -21,6 +24,9 @@ public class AnimatePlayer : MonoBehaviour
     }
     private void OnDisable()
     {
+        //取消订阅movement by velocity event
+        player.movementByVelocityEvent.OnMovementByVelocity -= MovementByVelocityEvent_OnMovementByVelocity;
+
         //取消订阅idle event
         player.idleEvent.OnIdle -= IdleEvent_OnIdle;
 
@@ -28,14 +34,23 @@ public class AnimatePlayer : MonoBehaviour
         player.aimWeaponEvent.OnWeaponAim -= AimWeaponEvent_OnWeaponAim;
     }
 
-    //idle event handler
+    //处理根据速度移动
+    private void MovementByVelocityEvent_OnMovementByVelocity(MovementByVelocityEvent movementByVelocityEvent, MovementByVelocityArgs movementByVelocityArgs)
+    {
+        //设置移动动画参数
+        SetMovementAnimationParameters();
+    }
+
+
+
+    //处理空闲事件
     private void IdleEvent_OnIdle(IdleEvent idleEvent)
     {
         //设置空闲动画参数
         SetIdleAnimationParameters();
     }
 
-    //weapon aim event handler
+    //处理武器射击事件
     private void AimWeaponEvent_OnWeaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
     {
         //初始化射击动画参数
@@ -60,6 +75,13 @@ public class AnimatePlayer : MonoBehaviour
         player.animator.SetBool(Settings.aimRight, false);
         player.animator.SetBool(Settings.aimLeft, false);
         player.animator.SetBool(Settings.aimDown, false);
+    }
+
+    //设置移动动画参数
+    private void SetMovementAnimationParameters()
+    {
+        player.animator.SetBool(Settings.isMoving, true);
+        player.animator.SetBool(Settings.isIdle, false);
     }
 
     //设置武器射击动画参数

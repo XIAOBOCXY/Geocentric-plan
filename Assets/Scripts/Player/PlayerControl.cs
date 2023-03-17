@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    [SerializeField] private MovementDetailsSO movementDetails;
     [SerializeField] private Transform weaponShootPosition;
     private Player player;
+    private float moveSpeed;
     private void Awake()
     {
         player = GetComponent<Player>();
+        moveSpeed = movementDetails.GetMoveSpeed();
     }
     private void Update()
     {
@@ -22,7 +25,34 @@ public class PlayerControl : MonoBehaviour
     //处理玩家移动
     private void MovementInput()
     {
-        player.idleEvent.CallIdleEvent();
+        //获取移动输入
+        //1.Vertical  对应键盘上面的上下箭头，当按下上或下箭头时触发
+        //2.Horizontal  对应键盘上面的左右箭头，当按下左或右箭头时触发
+        float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        float verticalMovement = Input.GetAxisRaw("Vertical");
+
+
+        //根据键盘的输入得到方向向量
+        Vector2 direction = new Vector2(horizontalMovement, verticalMovement);
+
+        //当斜着运动的时候，三角形为1 0.7 0.7 方向向量乘以0.7才能保证斜着移动的距离是1，否则会多移动距离
+        if (horizontalMovement != 0f && verticalMovement != 0f)
+        {
+            direction *= 0.7f;
+        }
+
+        //按下了键盘，方向向量不为0
+        if (direction != Vector2.zero)
+        {
+            //调用移动事件
+            player.movementByVelocityEvent.CallMovementByVelocityEvent(direction, moveSpeed);
+
+        }
+        //没有移动，调用空闲事件
+        else
+        {
+            player.idleEvent.CallIdleEvent();
+        }
     }
 
     //处理武器
@@ -57,4 +87,14 @@ public class PlayerControl : MonoBehaviour
         // 调用武器射击事件
         player.aimWeaponEvent.CallAimWeaponEvent(playerAimDirection, playerAngleDegrees, weaponAngleDegrees, weaponDirection);
     }
+
+    #region Validation
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        HelperUtlities.ValidateCheckNullValue(this, nameof(movementDetails), movementDetails);
+    }
+#endif
+    #endregion Validation
+
 }
