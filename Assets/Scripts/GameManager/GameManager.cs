@@ -47,6 +47,25 @@ public class GameManager : SingletonMonobehaviour<GameManager>
         player.Initialize(playerDetails);
     }
 
+    private void OnEnable()
+    {
+        //订阅room changed event.
+        StaticEventHandler.OnRoomChanged += StaticEventHandler_OnRoomChanged;
+    }
+
+    private void OnDisable()
+    {
+        //取消订阅room changed event
+        StaticEventHandler.OnRoomChanged -= StaticEventHandler_OnRoomChanged;
+    }
+
+    //处理房间改变事件
+    private void StaticEventHandler_OnRoomChanged(RoomChangedEventArgs roomChangedEventArgs)
+    {
+        //设置玩家进入当前的房间
+        SetCurrentRoom(roomChangedEventArgs.room);
+    }
+
     private void Start()
     {
         gameState = GameState.gameStarted;

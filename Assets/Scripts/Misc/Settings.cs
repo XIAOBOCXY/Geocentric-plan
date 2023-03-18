@@ -44,4 +44,7 @@ public static class Settings//添加static,将其改为静态方法，删除MonoBehaviour脚本
     public const string playerTag = "Player";
     public const string playerWeapon = "playerWeapon";
 
+    //最小的射击距离
+    public const float useAimAngleDistance = 3.5f;
+
 }

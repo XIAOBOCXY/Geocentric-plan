@@ -29,6 +29,12 @@ public static class HelperUtlities //不继承，并且改为静态类，静态类不会被实例化
         return degrees;
     }
 
+    //根据角度获得方向向量
+    public static Vector3 GetDirectionVectorFromAngle(float angle)
+    {
+        Vector3 directionVector = new Vector3(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle), 0f);
+        return directionVector;
+    }
 
     //通过玩家和鼠标之间方向向量的角度来获得射击方向
     public static AimDirection GetAimDirection(float angleDegrees)

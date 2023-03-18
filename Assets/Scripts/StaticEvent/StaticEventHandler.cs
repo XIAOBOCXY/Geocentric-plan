@@ -12,11 +12,11 @@ public static class StaticEventHandler
     {
         OnRoomChanged?.Invoke(new RoomChangedEventArgs() { room = room });
     }
-
 }
 
 public class RoomChangedEventArgs : EventArgs
 {
     public Room room;
 }
+
 
