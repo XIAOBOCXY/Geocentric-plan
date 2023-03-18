@@ -13,13 +13,23 @@ public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
     private RoomNodeTypeListSO roomNodeTypeList;
     private bool dungeonBuildSuccessful;
 
+    private void OnEnable()
+    {
+        GameResources.Instance.dimmerMaterial.SetFloat("Alpha_Slider", 0f);
+    }
+
+    private void OnDisable()
+    {
+        GameResources.Instance.dimmerMaterial.SetFloat("Alpha_Slider", 1f);
+    }
+
+
     protected override void Awake()
     {
         base.Awake();
         //加载房间节点类型列表
         LoadRoomNodeTypeList();
-        //设置变暗材质完全可见
-        GameResources.Instance.dimmerMaterial.SetFloat("Alpha_Slider", 1f);
+
     }
 
     //加载房间节点类型列表

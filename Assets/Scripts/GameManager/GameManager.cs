@@ -93,6 +93,10 @@ public class GameManager : SingletonMonobehaviour<GameManager>
         {
             Debug.Log("创建失败");
         }
+
+        //调用房间改变事件，实现淡入
+        StaticEventHandler.CallRoomChangedEvent(currentRoom);
+
         // 设置玩家在当前房间的正中间
         player.gameObject.transform.position = new Vector3((currentRoom.lowerBounds.x + currentRoom.upperBounds.x) / 2f, (currentRoom.lowerBounds.y + currentRoom.upperBounds.y) / 2f, 0f);
 

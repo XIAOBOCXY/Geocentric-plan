@@ -15,11 +15,11 @@ E:/GraduationDesign/Geocentric-plan
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-5230
+5207
 Successfully changed project path to: E:/GraduationDesign/Geocentric-plan
 E:/GraduationDesign/Geocentric-plan
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 261.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 304.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1c1 (4e944ebb9621)
 [Subsystems] Discovering subsystems at path E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Resources/UnitySubsystems
@@ -36,777 +36,321 @@ Initialize mono
 Mono path[0] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/Managed'
 Mono path[1] = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/GraduationDesign/unity hub downloads/2021.1.7f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001487 seconds.
+Registered in 0.001399 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 218.72 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 303.14 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.381 seconds
+- Completed reload, in  1.886 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003177 seconds.
+Registered in 0.004845 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 230.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 265.78 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.350 seconds
+- Completed reload, in  1.523 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 2.19 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.44 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2257 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.0 MB.
-System memory in use after: 132.1 MB.
+Unloading 2264 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.1 MB.
+System memory in use after: 134.3 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2719.
-Total: 2.544700 ms (FindLiveObjects: 0.237800 ms CreateObjectMapping: 0.129200 ms MarkObjects: 2.101100 ms  DeleteObjects: 0.075500 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2729.
+Total: 2.864800 ms (FindLiveObjects: 0.258000 ms CreateObjectMapping: 0.155500 ms MarkObjects: 2.354900 ms  DeleteObjects: 0.094200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/GameResources/Dungeon/Doorms
-  artifactKey: Guid(cb5ae9cb1593c094d9853b5e1dc731eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doorms using Guid(cb5ae9cb1593c094d9853b5e1dc731eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b40a1640327b770178380cbae5155a') in 0.011796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.984521 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors
-  artifactKey: Guid(cb5ae9cb1593c094d9853b5e1dc731eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors using Guid(cb5ae9cb1593c094d9853b5e1dc731eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e0438368080524a0e6460cb9657909') in 0.003173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.236697 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW
-  artifactKey: Guid(4aa40798dd6cff94fa3dea0b53504ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW using Guid(4aa40798dd6cff94fa3dea0b53504ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e253c40d87416e405e11d3dd892339b2') in 0.013333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.954852 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS
-  artifactKey: Guid(9846274d0e88d10499b63867652d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS using Guid(9846274d0e88d10499b63867652d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52ae365e2e440ef7c44eb13798afa11') in 0.009363 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.196145 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cbf2d91bd5286f5018b0cb6c3ca8af0') in 0.087019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.123084 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38182318fa21d469acf47561401a510') in 0.004497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.053841 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e1868f8816223288cffda69dcb9710') in 0.004509 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 71.695560 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e385e82e6adfdf28b754db3e0c337356') in 0.005866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.094571 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9414d02b517b2b0eaf93d7bf143519e7') in 0.257447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.174586 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767486e632278b4904cff816e0920050') in 0.014207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 86.649828 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0db036b7cd66b7c61444765b333dc4') in 0.018746 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.029838 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94eecd7c025f2b32861a1b08b0ea59d2') in 0.014090 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.608324 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d942a0dfe14285aa41f27120864f13') in 0.015073 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.498183 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782500e0a3b09d19f4a1a41967ad37d5') in 0.017324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.038718 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527f5600b8d22ac2a089f3fd715efa2d') in 0.017753 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.029229 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e339dce32b902b14acdc49c9ad3ecbd3') in 0.013502 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 69.672118 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82751ddbadf092887f50128b860d433') in 0.023108 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.655797 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd141e66351cbca9ad437c23ed063e0f') in 0.017413 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 231.694653 seconds.
-  path: Assets/MyAssets/Animation/Doors
-  artifactKey: Guid(75b3661ddec01fb4ca0bc25b4bebb439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors using Guid(75b3661ddec01fb4ca0bc25b4bebb439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29a57c2a1e42e9ef0bc9de159e4c1bf') in 0.010437 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.322090 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS
-  artifactKey: Guid(f8e751e4f9e92fd44b46c4e7559a114d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS using Guid(f8e751e4f9e92fd44b46c4e7559a114d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a0c7a1e1b85f76cc0e5a127fe5417d') in 0.003014 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.391420 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW
-  artifactKey: Guid(a1111c2640cf21e4890ba63d62f676ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW using Guid(a1111c2640cf21e4890ba63d62f676ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e12751a8941ae31a16c3b34bd77af0') in 0.003613 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.741740 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW/DoorEW.controller
-  artifactKey: Guid(c61aa6aa8a1dfb94fbfc225d144364a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW/DoorEW.controller using Guid(c61aa6aa8a1dfb94fbfc225d144364a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd835534b56454fa2743692cc16faf3e') in 0.010044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.392790 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS/DoorNS.controller
-  artifactKey: Guid(aa1606d6dcb79834ca598f587804b34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS/DoorNS.controller using Guid(aa1606d6dcb79834ca598f587804b34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73ac68b3f951f862569876049f2b032') in 0.006164 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.019052 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW/Doorclosed.anim
-  artifactKey: Guid(6a22d47d82629054199be04f9480ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW/Doorclosed.anim using Guid(6a22d47d82629054199be04f9480ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3a9433ae2b60f7730ad00e348a8386') in 0.018783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.374136 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW/DoorERClosed.anim
-  artifactKey: Guid(6a22d47d82629054199be04f9480ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW/DoorERClosed.anim using Guid(6a22d47d82629054199be04f9480ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836fac753a74658916db05d55cc8048b') in 0.008481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.237555 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW/DoorEwOpening.anim
-  artifactKey: Guid(2b5bdcc0d4e1d654ea2933b75532485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW/DoorEwOpening.anim using Guid(2b5bdcc0d4e1d654ea2933b75532485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12cf6c5e77b3500ff9e649e32f24c43') in 0.013664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.951722 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW/DoorEWClosed.anim
-  artifactKey: Guid(6a22d47d82629054199be04f9480ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW/DoorEWClosed.anim using Guid(6a22d47d82629054199be04f9480ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d35e62c3c6a992f46444a9b6752418') in 0.017915 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 45.510117 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW/DoorEWOpen.anim
-  artifactKey: Guid(11f78e15d52856f44acb2eb7269b9a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW/DoorEWOpen.anim using Guid(11f78e15d52856f44acb2eb7269b9a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727b6d4c8c6793c68f82f6b3332d57e0') in 0.011088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 308.311361 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06875c62f037a53551767aaf333bac91') in 0.007419 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.947196 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b255df02d1c60bccc4e451f76a4b3b56') in 0.005112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.860091 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcadd9b8d56e3b1c266c201dc5d0847') in 0.058480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.124618 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9719ea8d9b73f86850625310c15c3c41') in 0.019892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.718792 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8384e27b5cbdd54eb692dbd76ac440b3') in 0.012562 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.909289 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce79a3d7c14427f5ec2eb73bd5ac7125') in 0.012961 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.480414 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5ff0bc702a20f7ee04a8e49c584bcd') in 0.016960 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.220139 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc02758c2916b0553427819334a0148') in 0.016135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.771640 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16643c9337b659d51e5b4b14ed536712') in 0.013876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.759169 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b28c37b0c221e0b9c2dac038342a5d') in 0.023502 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.619507 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (DoorEW) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[E:\unity\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (DoorEW) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[E:\unity\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '137ceb843b77c723c85ace85ecd1c26a') in 0.024592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 293.527246 seconds.
-  path: Assets/Prefabs/Player/Player2/Player2.prefab
-  artifactKey: Guid(dc723cb68d0da134a8cb28b86521e173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Player2/Player2.prefab using Guid(dc723cb68d0da134a8cb28b86521e173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dd1ade1c67711ad8c7df5588251549') in 0.048189 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 395.472007 seconds.
-  path: Assets/Prefabs/Player/Player1/Player1.prefab
-  artifactKey: Guid(384a4f0ce8d30fa44b056620375a8cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Player1/Player1.prefab using Guid(384a4f0ce8d30fa44b056620375a8cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8555b5b65f04abf7f7fc0f0ec53c7dea') in 0.053513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 60.297213 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_1.png
-  artifactKey: Guid(ab27568bfd6444a4d93b508e0dd082a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_1.png using Guid(ab27568bfd6444a4d93b508e0dd082a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab53ee5ff0cf648b714e36ac49c29609') in 0.043249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.268652 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_2.png
-  artifactKey: Guid(cfa95956eb625404fb1ce9d3ac282ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_2.png using Guid(cfa95956eb625404fb1ce9d3ac282ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f285aa2daf7b76c49c1cabbdaa5e0f5c') in 0.034959 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 313.974241 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0381de3f792f0fc8406c2e06b4098190') in 0.014907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.541812 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_1.png
-  artifactKey: Guid(ab27568bfd6444a4d93b508e0dd082a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_1.png using Guid(ab27568bfd6444a4d93b508e0dd082a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4ac504d15f470af3afc94c0ad3a739') in 0.014796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.121834 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_2.png
-  artifactKey: Guid(cfa95956eb625404fb1ce9d3ac282ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_2.png using Guid(cfa95956eb625404fb1ce9d3ac282ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc7b3c946eccf8e63973c68ed529af3') in 0.013668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 235.400481 seconds.
-  path: Assets/Scenes/TestScene.unity
-  artifactKey: Guid(cd1b1d71771ad7e4fb67cf7864067532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TestScene.unity using Guid(cd1b1d71771ad7e4fb67cf7864067532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ada9a8d078d82e52dea0b6ba0b3b03e') in 0.017090 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 152.543830 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8447ef39dbc5b0f2da42d5f435192a') in 0.016436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.485567 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57377dbb544d66437c83d32ce51eaae1') in 0.011573 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.637064 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b7e618fcc0e5290088e14e98ceb419') in 0.012555 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.371315 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5f83510b5e8590e18fb7e54b3adf32') in 0.034182 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.194707 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_0.png
-  artifactKey: Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_0.png using Guid(b09383e40becd6f46a69225b4679378d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b744e125ab30473549926526ad323b') in 0.014389 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 86.046540 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_1.png
-  artifactKey: Guid(ab27568bfd6444a4d93b508e0dd082a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_1.png using Guid(ab27568bfd6444a4d93b508e0dd082a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281689bbcb810a718db50af0ac85a0a0') in 0.020086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.539023 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorWE_2.png
-  artifactKey: Guid(cfa95956eb625404fb1ce9d3ac282ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorWE_2.png using Guid(cfa95956eb625404fb1ce9d3ac282ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957e940d8e78e2ef61eaca0161f81d05') in 0.016005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2724.275471 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorNS-export.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorNS-export.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde4cc0a371944eecef3f3efbf6d5916') in 0.032857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.238603 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorNS-export.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorNS-export.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435f9171563a9d3f441bce6ebfa1969c') in 0.022344 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.509999 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorNS-export.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorNS-export.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a419c207a25e4636b454935b68753c2d') in 0.017136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.531892 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorNS-export.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorNS-export.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7174ef8c2d8e97867904d3dfd0ed2180') in 0.042480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.321180 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorNS.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorNS.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e5077246b3e0c86ea9531c9da92132') in 0.033010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.609880 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorNS.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorNS.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1267f6d11a05fddf6aed8e4b659e02f8') in 0.035962 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.465958 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorNS.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorNS.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e73f3ea434984b248e441eef583334') in 0.038601 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.580635 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorNS.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorNS.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491f682fb5def13c2ac39174380e0ada') in 0.037676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 483.325549 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWBottom-export.png
-  artifactKey: Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWBottom-export.png using Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72e47a2bec470019a2f5034208929c2') in 0.027011 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.566692 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWBottom.png
-  artifactKey: Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWBottom.png using Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdded8ce8c50c211ff8ebedd61241dfc') in 0.024260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.860029 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWBottom.png
-  artifactKey: Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWBottom.png using Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0c4865627671cd90d937e4b831f55f') in 0.013818 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.011409 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWBottom.png
-  artifactKey: Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWBottom.png using Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ad9c9c674e0d73482fc8d73403d362') in 0.039197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 313.792866 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWTop-export.png
-  artifactKey: Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWTop-export.png using Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb6bf4db91a940b63eedf1b336dc41e') in 0.022500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.981852 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWTop.png
-  artifactKey: Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWTop.png using Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33515264447e0505a223eb90a71a39ca') in 0.024694 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.852921 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWTop.png
-  artifactKey: Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWTop.png using Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a5fcc1e4c2d1b005bcbc00e54b05fe') in 0.013674 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.178900 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWTop.png
-  artifactKey: Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWTop.png using Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfaa3229c99e0bee9bb8ca41bc019ae1') in 0.032905 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.196519 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS/DoorNSClosed.anim
-  artifactKey: Guid(85e31a51d9f9cf34d808ecc8b9ac594d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS/DoorNSClosed.anim using Guid(85e31a51d9f9cf34d808ecc8b9ac594d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f90d4b3827ff6854daa3eb0df1d9d7e') in 0.012941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.312055 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS/DoorNSOpen.anim
-  artifactKey: Guid(186359decefc9ec49a6addde4824737c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS/DoorNSOpen.anim using Guid(186359decefc9ec49a6addde4824737c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4209ca7fc761f926aa827ac2bf829600') in 0.009920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.302215 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS/DoorNSOpening.anim
-  artifactKey: Guid(dda76d6020606474eae8230872d93c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS/DoorNSOpening.anim using Guid(dda76d6020606474eae8230872d93c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89df2cdd043f417f56515cd1a25e23d8') in 0.009560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 105.821758 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6654f16e4f5620783a6699f8d24295b') in 0.007981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 93.342138 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEW.controller
-  artifactKey: Guid(fa5f18c0d3a11044690a694e0381e175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEW.controller using Guid(fa5f18c0d3a11044690a694e0381e175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43585709b740b64efab6f0787cc120d') in 0.012799 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.127413 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWClosed.anim
-  artifactKey: Guid(83e7fc823bb132347a944a69af67cd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWClosed.anim using Guid(83e7fc823bb132347a944a69af67cd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8350f6946c3b66bc19098c8b0303f8a') in 0.009966 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.871366 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWClosing.anim
-  artifactKey: Guid(5d144f558563c4e47af9ff5d7885bd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWClosing.anim using Guid(5d144f558563c4e47af9ff5d7885bd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1582cc12a2a6a2951dc09ded89be2720') in 0.012583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.727579 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWOpen.anim
-  artifactKey: Guid(4a12969b0df7fb843acfb56fd9d92ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWOpen.anim using Guid(4a12969b0df7fb843acfb56fd9d92ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aafc000a0d31fde8a9b102cce030481') in 0.011584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.476070 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWOpening.anim
-  artifactKey: Guid(438ae9e288a51904aab16171b9209d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW 1/DoorEWOpening.anim using Guid(438ae9e288a51904aab16171b9209d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55698131b43d1575d9635929a4f30e21') in 0.014324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.456684 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS 1/DoorNS.controller
-  artifactKey: Guid(e5bed29e359bbc74d99943f34b684363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS 1/DoorNS.controller using Guid(e5bed29e359bbc74d99943f34b684363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b399399d8b601a331205ddf3b9af4969') in 0.006507 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.527454 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS 1/DoorNSClosed.anim
-  artifactKey: Guid(726079e6d1f4daa4a97cac1992468da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS 1/DoorNSClosed.anim using Guid(726079e6d1f4daa4a97cac1992468da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6c8b47bc6d4e7f92b3ac7729c7e289') in 0.004444 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.284952 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW 1
-  artifactKey: Guid(bf3e9a7db0082a545b617d733ddd54a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW 1 using Guid(bf3e9a7db0082a545b617d733ddd54a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499c1adfe3ddf76added551a0e802d5a') in 0.009211 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.058787 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorEW
-  artifactKey: Guid(bf3e9a7db0082a545b617d733ddd54a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorEW using Guid(bf3e9a7db0082a545b617d733ddd54a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f3c1a8c44eb59da6f174c591dcdaadf') in 0.006151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.424660 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS 1
-  artifactKey: Guid(b7db2130f23795c478665fee830e9668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS 1 using Guid(b7db2130f23795c478665fee830e9668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577ac7efbfb9ea0c79e5390cf2b98c7e') in 0.008677 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.214610 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS
-  artifactKey: Guid(b7db2130f23795c478665fee830e9668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS using Guid(b7db2130f23795c478665fee830e9668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7716b54e99387e16573277f55f5ab12a') in 0.003385 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.858838 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba81247f00bd257369c735b5105be857') in 0.005012 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.437233 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ef40ed079854572e1ccbe0bc3435fc') in 0.033472 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.073145 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7d8162aae7ac222f4bfd3edf452251') in 0.004652 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 248.077217 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675b7cc50bf62150f9f95e0f97fc22f6') in 0.009646 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.417462 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047a2d6fb2c3008f45cd39b700ce60ab') in 0.005337 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.149284 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71d2e3aa7492fda3928cbda6baeb5df') in 0.005054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 236.648359 seconds.
-  path: Assets/MyAssets/Animation/Doors/DoorNS/DoorNS.controller
-  artifactKey: Guid(e5bed29e359bbc74d99943f34b684363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Animation/Doors/DoorNS/DoorNS.controller using Guid(e5bed29e359bbc74d99943f34b684363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b18c792e5f1fb9a212410720cd3604') in 0.006332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 266.459037 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23593ed60aa6f40e7ccd0f09014f268d') in 0.028886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.178598 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02c0bceabf9d5af0ebac880af7400be') in 0.015877 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 327.632017 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ef6d2810f4453f3f5daa6524fb3810') in 0.029305 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.751501 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb171060c2bd43145591b2193c59591b') in 0.019451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 81.811881 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4467de7b736f49cc913d7afbb056e9d') in 0.028129 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.766350 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bba142e222e1ef995789ded3b7ccf10') in 0.015369 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 664.236975 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWTop.png
-  artifactKey: Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWTop.png using Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd76919bed57bdacab5d20cd67211421') in 0.031057 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 660.077807 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1719809557bf6705ca9a6e19e4f59fc4') in 0.042832 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1433.026836 seconds.
-  path: Assets/Scenes/MainGameScene.unity
-  artifactKey: Guid(ac7064e72e6195144a9af7cb00fe14ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGameScene.unity using Guid(ac7064e72e6195144a9af7cb00fe14ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e629ea45375fd4603deeed6c2d564921') in 0.012512 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.043574 seconds.
-  path: Assets/Scenes/TestScene.unity
-  artifactKey: Guid(cd1b1d71771ad7e4fb67cf7864067532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TestScene.unity using Guid(cd1b1d71771ad7e4fb67cf7864067532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac58065fd35b08504602a4d2d71fae6') in 0.009584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 204.105383 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Rooms/Room.prefab
-  artifactKey: Guid(845bea55afba40e40b432dcc2b8dafc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/Room.prefab using Guid(845bea55afba40e40b432dcc2b8dafc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d56275c8273cf6fe4ee3ba9df138777') in 0.026521 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 334.043641 seconds.
-  path: Assets/Scripts/Misc/Settings.cs
-  artifactKey: Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Misc/Settings.cs using Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd06812dcf1a2e180b7e59e84ff9ac10') in 0.021203 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 91.863758 seconds.
-  path: Assets/Scripts/Misc/Settings.cs
-  artifactKey: Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Misc/Settings.cs using Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c34a4e36f85558f5f4fe27af7c60301') in 0.002840 seconds 
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_10.prefab
+  artifactKey: Guid(33c4c6c7671316844a38922158752cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_10.prefab using Guid(33c4c6c7671316844a38922158752cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b4579011c06b5dff3157eca0a9f58f') in 0.101009 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004666 seconds.
+Registered in 0.004047 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.12 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.1 MB.
+System memory in use after: 125.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2731.
+Total: 2.671700 ms (FindLiveObjects: 0.305600 ms CreateObjectMapping: 0.170800 ms MarkObjects: 2.152100 ms  DeleteObjects: 0.041500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003328 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.065 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.1 MB.
+System memory in use after: 125.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2733.
+Total: 2.459600 ms (FindLiveObjects: 0.231300 ms CreateObjectMapping: 0.121200 ms MarkObjects: 2.084100 ms  DeleteObjects: 0.021900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003863 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.090 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2735.
+Total: 2.672100 ms (FindLiveObjects: 0.271000 ms CreateObjectMapping: 0.138000 ms MarkObjects: 2.226600 ms  DeleteObjects: 0.034800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005200 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.377 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2737.
+Total: 2.633000 ms (FindLiveObjects: 0.286500 ms CreateObjectMapping: 0.215100 ms MarkObjects: 2.067400 ms  DeleteObjects: 0.062800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 661.967281 seconds.
+  path: Assets/MyAssets/shaders/DungeonLightShader_Dimmed.shadergraph
+  artifactKey: Guid(a35e9f660aeac4b4188308b3cef079f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/shaders/DungeonLightShader_Dimmed.shadergraph using Guid(a35e9f660aeac4b4188308b3cef079f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdc1df9e267014e7347cbcf773882f0') in 0.073901 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.281 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.1 MB.
+System memory in use after: 125.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2739.
+Total: 2.645200 ms (FindLiveObjects: 0.300800 ms CreateObjectMapping: 0.158400 ms MarkObjects: 2.157600 ms  DeleteObjects: 0.027100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.572716 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4825ffe21928046399986e77e79e14fb') in 0.306080 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.577 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2741.
+Total: 2.426900 ms (FindLiveObjects: 0.239100 ms CreateObjectMapping: 0.138400 ms MarkObjects: 2.001200 ms  DeleteObjects: 0.047300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003402 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.557 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2743.
+Total: 2.742100 ms (FindLiveObjects: 0.265300 ms CreateObjectMapping: 0.120100 ms MarkObjects: 2.319200 ms  DeleteObjects: 0.034500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003279 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.478 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.12 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2133 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.1 MB.
-System memory in use after: 142.3 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.5 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3206.
-Total: 3.106400 ms (FindLiveObjects: 0.282100 ms CreateObjectMapping: 0.121200 ms MarkObjects: 2.575200 ms  DeleteObjects: 0.126800 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2745.
+Total: 2.335800 ms (FindLiveObjects: 0.240200 ms CreateObjectMapping: 0.114600 ms MarkObjects: 1.963300 ms  DeleteObjects: 0.016500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 69.957308 seconds.
-  path: Assets/Scripts/Dungeon/InstantiatedRoom.cs
-  artifactKey: Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Dungeon/InstantiatedRoom.cs using Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba7f9647e8997aa15b24e0d5cd2b4b9') in 0.010615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 584.237476 seconds.
-  path: Assets/Scripts/Dungeon/InstantiatedRoom.cs
-  artifactKey: Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Dungeon/InstantiatedRoom.cs using Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8818783759d3c3c6cdef4329c4dd286b') in 0.007764 seconds 
+  Time since last request: 212.071743 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125250db2b2837948cf988d7df009cb9') in 0.093621 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003749 seconds.
+Registered in 0.003355 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.06 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.120 seconds
+- Completed reload, in  1.501 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.0 MB.
-System memory in use after: 142.3 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3208.
-Total: 3.405800 ms (FindLiveObjects: 0.566700 ms CreateObjectMapping: 0.218300 ms MarkObjects: 2.566800 ms  DeleteObjects: 0.052900 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2747.
+Total: 2.312800 ms (FindLiveObjects: 0.241200 ms CreateObjectMapping: 0.130900 ms MarkObjects: 1.920000 ms  DeleteObjects: 0.019800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003692 seconds.
+Registered in 0.003096 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.19 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.099 seconds
+- Completed reload, in  1.093 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 3.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.1 MB.
-System memory in use after: 142.3 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.4 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3210.
-Total: 2.951600 ms (FindLiveObjects: 0.350200 ms CreateObjectMapping: 0.165200 ms MarkObjects: 2.400300 ms  DeleteObjects: 0.032600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2749.
+Total: 2.772600 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.141300 ms MarkObjects: 2.370500 ms  DeleteObjects: 0.018800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003342 seconds.
+Registered in 0.003259 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.14 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.124 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2751.
+Total: 2.902600 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.127300 ms MarkObjects: 2.472500 ms  DeleteObjects: 0.034700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003476 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2753.
+Total: 2.868700 ms (FindLiveObjects: 0.218600 ms CreateObjectMapping: 0.153300 ms MarkObjects: 2.444000 ms  DeleteObjects: 0.051800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003299 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.095 seconds
@@ -814,370 +358,944 @@ Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 2.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.1 MB.
-System memory in use after: 142.3 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3212.
-Total: 2.986100 ms (FindLiveObjects: 0.281900 ms CreateObjectMapping: 0.141000 ms MarkObjects: 2.542500 ms  DeleteObjects: 0.019600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2755.
+Total: 2.455900 ms (FindLiveObjects: 0.231700 ms CreateObjectMapping: 0.124900 ms MarkObjects: 2.079600 ms  DeleteObjects: 0.018300 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 161.992379 seconds.
-  path: Assets/MyAssets/Textures/Doors/doorNS.png
-  artifactKey: Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/doorNS.png using Guid(c2fd4bf6e871a9745b36e2c1077fc9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eedf0bcf3e5232cd57657441c32ac3f') in 0.218711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.589181 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWBottom.png
-  artifactKey: Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWBottom.png using Guid(6386ef23e00719e4d9b85381a150d238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f6c32a2398313bc3244a176c6d9645') in 0.032662 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003188 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.086 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.8 MB.
-System memory in use after: 143.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3243.
-Total: 2.790700 ms (FindLiveObjects: 0.286000 ms CreateObjectMapping: 0.122800 ms MarkObjects: 2.324300 ms  DeleteObjects: 0.056300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.489854 seconds.
-  path: Assets/MyAssets/Textures/Doors/DoorEWTop.png
-  artifactKey: Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/Textures/Doors/DoorEWTop.png using Guid(7fc39c4eccdacf0498b6e59d85f1e67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e840db19cfa209e97980d0a90cd435') in 0.092949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.280971 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e098273b24df25dc4f953d64f6a74f6d') in 0.205609 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.175986 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ce259304e21d7ed059533dc2dad814') in 0.027125 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003407 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.143 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.4 MB.
-System memory in use after: 143.6 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3297.
-Total: 2.915600 ms (FindLiveObjects: 0.356300 ms CreateObjectMapping: 0.203700 ms MarkObjects: 2.315700 ms  DeleteObjects: 0.039100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003257 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.150 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.4 MB.
-System memory in use after: 143.6 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3299.
-Total: 3.343600 ms (FindLiveObjects: 0.290000 ms CreateObjectMapping: 0.130200 ms MarkObjects: 2.894300 ms  DeleteObjects: 0.027700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 350.962950 seconds.
-  path: Assets/Scripts/Misc/Settings.cs
-  artifactKey: Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Misc/Settings.cs using Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23811df6df24ea77dee395c9f9cba979') in 0.027505 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003493 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.21 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.081 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.13 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.5 MB.
-System memory in use after: 143.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3301.
-Total: 2.821800 ms (FindLiveObjects: 0.288700 ms CreateObjectMapping: 0.128000 ms MarkObjects: 2.370900 ms  DeleteObjects: 0.033100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.837299 seconds.
-  path: Assets/Scripts/Dungeon/Door.cs
-  artifactKey: Guid(de70fabe53ed4784392c48cce6c5eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Dungeon/Door.cs using Guid(de70fabe53ed4784392c48cce6c5eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836763cafec30f42a6caf89b3904d7c0') in 0.027129 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003270 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.061 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.5 MB.
-System memory in use after: 143.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3304.
-Total: 2.761100 ms (FindLiveObjects: 0.321100 ms CreateObjectMapping: 0.138100 ms MarkObjects: 2.242600 ms  DeleteObjects: 0.058300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 699.437316 seconds.
-  path: Assets/Scripts/Dungeon/Door.cs
-  artifactKey: Guid(de70fabe53ed4784392c48cce6c5eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Dungeon/Door.cs using Guid(de70fabe53ed4784392c48cce6c5eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf6142a50cd293e096b42c4cdf6f078') in 0.013931 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.003115 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.11 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.297 seconds
+- Completed reload, in  1.034 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.09 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.99 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.5 MB.
-System memory in use after: 143.7 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3306.
-Total: 2.643000 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.188500 ms  DeleteObjects: 0.057600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2757.
+Total: 3.030700 ms (FindLiveObjects: 0.244000 ms CreateObjectMapping: 0.192500 ms MarkObjects: 2.571100 ms  DeleteObjects: 0.021600 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 276.504358 seconds.
-  path: Assets/Scripts/Dungeon/Door.cs
-  artifactKey: Guid(de70fabe53ed4784392c48cce6c5eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Dungeon/Door.cs using Guid(de70fabe53ed4784392c48cce6c5eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0b13554cdd0253442cba3540f6cf2d') in 0.027080 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003316 seconds.
+Registered in 0.003082 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.13 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.060 seconds
+- Completed reload, in  0.957 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.6 MB.
-System memory in use after: 143.8 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.2 MB.
+System memory in use after: 125.4 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3308.
-Total: 2.951600 ms (FindLiveObjects: 0.275000 ms CreateObjectMapping: 0.125400 ms MarkObjects: 2.532400 ms  DeleteObjects: 0.017800 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2759.
+Total: 2.555100 ms (FindLiveObjects: 0.213200 ms CreateObjectMapping: 0.115100 ms MarkObjects: 2.209500 ms  DeleteObjects: 0.016500 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 289.541423 seconds.
-  path: Assets/Scripts/Dungeon/InstantiatedRoom.cs
-  artifactKey: Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Dungeon/InstantiatedRoom.cs using Guid(3153cd99c90f0964caf02c57a53a50f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5ba330f70b3f772056ce2d7c0b19d9') in 0.009260 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.019992 seconds.
+Registered in 0.003321 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.063 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2761.
+Total: 2.503400 ms (FindLiveObjects: 0.272500 ms CreateObjectMapping: 0.141900 ms MarkObjects: 2.070300 ms  DeleteObjects: 0.017200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003780 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.131 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 2.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.298 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.6 MB.
-System memory in use after: 143.8 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3310.
-Total: 3.039400 ms (FindLiveObjects: 0.288800 ms CreateObjectMapping: 0.130100 ms MarkObjects: 2.565800 ms  DeleteObjects: 0.053800 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2763.
+Total: 2.877400 ms (FindLiveObjects: 0.238300 ms CreateObjectMapping: 0.158400 ms MarkObjects: 2.461900 ms  DeleteObjects: 0.017300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 55.653303 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) DoorNS中，doorCollider是空值
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckNullValue (UnityEngine.Object,string,UnityEngine.Object) (at Assets/Scripts/Utilities/HelperUtilities.cs:77)
-Door:OnValidate () (at Assets/Scripts/Dungeon/Door.cs:90)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 77)
-
- -> (artifact id: '2386007904772bb1c13d2fcda0181373') in 0.299814 seconds 
+  Time since last request: 814.099761 seconds.
+  path: Assets/MyAssets/shaders/DungeonLightShader_Dimmed 1.shadergraph
+  artifactKey: Guid(f58d588074369294f928249ec49ff428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/shaders/DungeonLightShader_Dimmed 1.shadergraph using Guid(f58d588074369294f928249ec49ff428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f29bdc0c06796c2e4dd8c8f829fc124') in 0.119483 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.547863 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) DoorEW中，doorCollider是空值
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-HelperUtlities:ValidateCheckNullValue (UnityEngine.Object,string,UnityEngine.Object) (at Assets/Scripts/Utilities/HelperUtilities.cs:77)
-Door:OnValidate () (at Assets/Scripts/Dungeon/Door.cs:90)
-
-(Filename: Assets/Scripts/Utilities/HelperUtilities.cs Line: 77)
-
- -> (artifact id: '6c4279a454bef5dc00f0fbcdf9b97410') in 0.041233 seconds 
+  Time since last request: 671.067363 seconds.
+  path: Assets/MyAssets/Materials/Ammo
+  artifactKey: Guid(3e00cb744a8b05a4fbb5bca3ab77a0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Materials/Ammo using Guid(3e00cb744a8b05a4fbb5bca3ab77a0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ac7dc0bf651d759d7e39a6e2d08650') in 0.015503 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.175652 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab
-  artifactKey: Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorNS/DoorNS.prefab using Guid(d81c1873b0bec90478a928a259d83e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec55ef8d0cd58c9031085879fca5054') in 0.024111 seconds 
+  Time since last request: 6.023570 seconds.
+  path: Assets/MyAssets/Materials/Effects
+  artifactKey: Guid(1a46b00fba744e241a0ac6b6d2d0d81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Materials/Effects using Guid(1a46b00fba744e241a0ac6b6d2d0d81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65342475897c8ae9435d239df5fd2df8') in 0.014276 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.343285 seconds.
-  path: Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab
-  artifactKey: Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameResources/Dungeon/Doors/DoorEW/DoorEW.prefab using Guid(e78abac046259424cbfc5dfd6560d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392598f7066b78bd70fac2af15fe2723') in 0.038707 seconds 
+  Time since last request: 4.424808 seconds.
+  path: Assets/MyAssets/Materials/Enemy
+  artifactKey: Guid(b4fa62975125c1d4b8ec997ca52e1bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Materials/Enemy using Guid(b4fa62975125c1d4b8ec997ca52e1bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83405e64668042a8c725378258b5617f') in 0.012566 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 124.738639 seconds.
-  path: Assets/Prefabs/Player/Player.prefab
-  artifactKey: Guid(b399656481b819d4f8507a88f229c4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Player.prefab using Guid(b399656481b819d4f8507a88f229c4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19970d3e5874eb5ec62cddd44acf336a') in 0.044749 seconds 
+  Time since last request: 3.212060 seconds.
+  path: Assets/MyAssets/Materials/Furniture.physicsMaterial2D
+  artifactKey: Guid(df97f92c76b6aba458a6440adbcf8342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Materials/Furniture.physicsMaterial2D using Guid(df97f92c76b6aba458a6440adbcf8342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ff1a60a28b428d9b18fbc4f331ac64') in 0.016546 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 31.694631 seconds.
-  path: Assets/Prefabs/Player/Player1/Player1.prefab
-  artifactKey: Guid(384a4f0ce8d30fa44b056620375a8cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Player1/Player1.prefab using Guid(384a4f0ce8d30fa44b056620375a8cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38116624afb13a433c26652095052a7d') in 0.144781 seconds 
+  Time since last request: 2.903031 seconds.
+  path: Assets/MyAssets/Materials/Dungeon
+  artifactKey: Guid(61bf987f84d870e4aa94f4299aec320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Materials/Dungeon using Guid(61bf987f84d870e4aa94f4299aec320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14dc94a639bf7024aadea2d48d31cf1a') in 0.014865 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.582918 seconds.
-  path: Assets/Prefabs/Player/Player2/Player2.prefab
-  artifactKey: Guid(dc723cb68d0da134a8cb28b86521e173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Player2/Player2.prefab using Guid(dc723cb68d0da134a8cb28b86521e173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb82f58ea4be4e845a7a8f354a8ba738') in 0.238232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.316972 seconds.
-  path: Assets/Prefabs/Player/Player.prefab
-  artifactKey: Guid(b399656481b819d4f8507a88f229c4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Player.prefab using Guid(b399656481b819d4f8507a88f229c4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13eb1b3d5a6640de3d5fcc321a80765b') in 0.018388 seconds 
+  Time since last request: 81.062972 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff733c23007930e7b3e0ee504f07011') in 0.263504 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003382 seconds.
+Registered in 0.003143 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 6.16 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.094 seconds
+- Completed reload, in  1.107 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 5.87 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.7 MB.
-System memory in use after: 143.9 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.6 MB.
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3350.
-Total: 8.085900 ms (FindLiveObjects: 0.489000 ms CreateObjectMapping: 0.357600 ms MarkObjects: 7.196900 ms  DeleteObjects: 0.040200 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2765.
+Total: 2.557800 ms (FindLiveObjects: 0.234000 ms CreateObjectMapping: 0.118400 ms MarkObjects: 2.147200 ms  DeleteObjects: 0.056900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003125 seconds.
+Registered in 0.003249 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 2.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.050 seconds
+- Completed reload, in  1.193 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.7 MB.
-System memory in use after: 143.9 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.6 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3352.
-Total: 3.399100 ms (FindLiveObjects: 0.290200 ms CreateObjectMapping: 0.118800 ms MarkObjects: 2.968700 ms  DeleteObjects: 0.019700 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2767.
+Total: 2.564300 ms (FindLiveObjects: 0.216100 ms CreateObjectMapping: 0.117300 ms MarkObjects: 2.192400 ms  DeleteObjects: 0.037400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004242 seconds.
+Registered in 0.003058 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.97 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.11 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.554 seconds
+- Completed reload, in  1.072 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.5 MB.
-System memory in use after: 143.8 MB.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3354.
-Total: 3.014500 ms (FindLiveObjects: 0.311000 ms CreateObjectMapping: 0.143000 ms MarkObjects: 2.539600 ms  DeleteObjects: 0.019500 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2769.
+Total: 2.733100 ms (FindLiveObjects: 0.396800 ms CreateObjectMapping: 0.239600 ms MarkObjects: 2.050700 ms  DeleteObjects: 0.044700 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 7.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2771.
+Total: 3.637400 ms (FindLiveObjects: 0.329400 ms CreateObjectMapping: 0.298300 ms MarkObjects: 2.980400 ms  DeleteObjects: 0.027500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.280 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2773.
+Total: 8.213900 ms (FindLiveObjects: 0.424500 ms CreateObjectMapping: 0.233100 ms MarkObjects: 7.067100 ms  DeleteObjects: 0.487100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1314.647481 seconds.
+  path: Assets/ScriptableObjectAssets/Player/Movements/MovementDetails_Player.asset
+  artifactKey: Guid(3044f063db819b248a3fca3f00a56cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Player/Movements/MovementDetails_Player.asset using Guid(3044f063db819b248a3fca3f00a56cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9afbec0269b776782b75caf6332d01') in 0.108121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.992932 seconds.
+  path: Assets/ScriptableObjectAssets/Player/Movements/MovementDetails_Player_Player1.asset
+  artifactKey: Guid(faf85295f0dbcbb44b793d39fb8eca2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Player/Movements/MovementDetails_Player_Player1.asset using Guid(faf85295f0dbcbb44b793d39fb8eca2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0d319547c9f185f27e1140e7d0afcb') in 0.023824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.352561 seconds.
+  path: Assets/ScriptableObjectAssets/Player/Movements/MovementDetails_Player_Player2.asset
+  artifactKey: Guid(a8fae4547662e2e48bc7b09f3f26336d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Player/Movements/MovementDetails_Player_Player2.asset using Guid(a8fae4547662e2e48bc7b09f3f26336d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612d97a57efb574bb65de0afb23f7342') in 0.012286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.514608 seconds.
+  path: Assets/ScriptableObjectAssets/Player/PlayerDetails/CurrentPlayer.asset
+  artifactKey: Guid(7507708cccf495749bae5b5bf73eef07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjectAssets/Player/PlayerDetails/CurrentPlayer.asset using Guid(7507708cccf495749bae5b5bf73eef07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbdea492cc4c5d14a3e53728f1ea1698') in 0.060207 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.105 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2775.
+Total: 3.320600 ms (FindLiveObjects: 0.259600 ms CreateObjectMapping: 0.153100 ms MarkObjects: 2.879600 ms  DeleteObjects: 0.026800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.167 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2777.
+Total: 3.060200 ms (FindLiveObjects: 0.302000 ms CreateObjectMapping: 0.170000 ms MarkObjects: 2.562100 ms  DeleteObjects: 0.024900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003318 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.633 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2779.
+Total: 2.705400 ms (FindLiveObjects: 0.238600 ms CreateObjectMapping: 0.123700 ms MarkObjects: 2.322300 ms  DeleteObjects: 0.019800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003410 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.130 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2781.
+Total: 2.477500 ms (FindLiveObjects: 0.242600 ms CreateObjectMapping: 0.135000 ms MarkObjects: 2.080000 ms  DeleteObjects: 0.018600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003888 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.504 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2783.
+Total: 3.486000 ms (FindLiveObjects: 0.560700 ms CreateObjectMapping: 0.443400 ms MarkObjects: 2.456900 ms  DeleteObjects: 0.022300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003262 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.021 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2785.
+Total: 2.745600 ms (FindLiveObjects: 0.373000 ms CreateObjectMapping: 0.154500 ms MarkObjects: 2.159800 ms  DeleteObjects: 0.044400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004195 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.106 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2787.
+Total: 3.110500 ms (FindLiveObjects: 0.343000 ms CreateObjectMapping: 0.201400 ms MarkObjects: 2.543800 ms  DeleteObjects: 0.020500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003482 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.3 MB.
+System memory in use after: 125.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2789.
+Total: 3.786500 ms (FindLiveObjects: 0.323900 ms CreateObjectMapping: 0.145300 ms MarkObjects: 3.270200 ms  DeleteObjects: 0.017900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003233 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.127 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.4 MB.
+System memory in use after: 125.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2791.
+Total: 2.644700 ms (FindLiveObjects: 0.323400 ms CreateObjectMapping: 0.153800 ms MarkObjects: 2.150500 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1451.007358 seconds.
+  path: Assets/Scripts/Misc/Settings.cs
+  artifactKey: Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Misc/Settings.cs using Guid(d678019aaa9346545b9bd14100e51ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d5cb0b861ec57c60f4fce1359520c1') in 0.069029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.786680 seconds.
+  path: Assets/Scripts/Dungeon/DungeonLevelSO.cs
+  artifactKey: Guid(8014a14e2feacf541ae27b44ecab0537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/DungeonLevelSO.cs using Guid(8014a14e2feacf541ae27b44ecab0537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2954626b8a9875a2c891213b407d6aaa') in 0.008862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 278.898397 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_1.prefab
+  artifactKey: Guid(bac31bc175500d241bd24cea6b3f836c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_1.prefab using Guid(bac31bc175500d241bd24cea6b3f836c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cef8d28d0f07e7518c7c7b0e397b063') in 0.142952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.158604 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_2.prefab
+  artifactKey: Guid(e4f95f5b55867b040ae85a4c73159c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_2.prefab using Guid(e4f95f5b55867b040ae85a4c73159c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e88da7870575ac0bd9f08cca5b4db25') in 0.012785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.334267 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_3.prefab
+  artifactKey: Guid(ce34f790e2ba34740aad06942722e583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_3.prefab using Guid(ce34f790e2ba34740aad06942722e583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4419fb5a24c18215c8708ea7e3d9b6b') in 0.012699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.305760 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_4.prefab
+  artifactKey: Guid(15b833992a590d54fadcc4e7c2767be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_4.prefab using Guid(15b833992a590d54fadcc4e7c2767be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b0857682e7e9bbf14f2ea6b8fe2907') in 0.012741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.354678 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_5.prefab
+  artifactKey: Guid(e102cc258acbe374dac65049fa727cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_5.prefab using Guid(e102cc258acbe374dac65049fa727cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df31eb4495fc17b1539d3983335a181') in 0.020483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.325054 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_6.prefab
+  artifactKey: Guid(b6faaa374e3aacd4bb7ee58b81b69433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_6.prefab using Guid(b6faaa374e3aacd4bb7ee58b81b69433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fb04bdcad215ea1aa5b0579f076f03') in 0.012225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.275838 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_7.prefab
+  artifactKey: Guid(6acf21859f724a641a8a80b83257452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_7.prefab using Guid(6acf21859f724a641a8a80b83257452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1224f9f4946d2ff23530c9ffa36ca267') in 0.015306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.341106 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_8.prefab
+  artifactKey: Guid(9f78f4239b67568498ad426646d3251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_8.prefab using Guid(9f78f4239b67568498ad426646d3251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc4b405f7e5f64eef34009b81ec27e5') in 0.021879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.279666 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_9.prefab
+  artifactKey: Guid(773c00c10a5616e4baf6374c9a8965ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_9.prefab using Guid(773c00c10a5616e4baf6374c9a8965ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d771304cc20707cce7601e125fc89d2') in 0.013253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.316374 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_10.prefab
+  artifactKey: Guid(a2be78312986a4d4fb0daa87594b6d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorEW_MyRooms_10.prefab using Guid(a2be78312986a4d4fb0daa87594b6d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ab02513cf6163e0d940dbb8ae7978f') in 0.013208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.273847 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_1.prefab
+  artifactKey: Guid(d791dbb9b494cb94bb629d056d0c7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_1.prefab using Guid(d791dbb9b494cb94bb629d056d0c7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6782fb53edb5e4d62890161fb330f28') in 0.012175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.860763 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_2.prefab
+  artifactKey: Guid(546786098b1ae5346a4f5f72139ac139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_2.prefab using Guid(546786098b1ae5346a4f5f72139ac139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f184f56b59340ccc5d06e113999e63') in 0.015605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.250491 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_3.prefab
+  artifactKey: Guid(a47120db53ae1ba488174387259eecef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_3.prefab using Guid(a47120db53ae1ba488174387259eecef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09cf2d51fdb3a88c4c53eb6a2c5056ae') in 0.014089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.355127 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_4.prefab
+  artifactKey: Guid(e8850fb7d0f4c624a984dac28120e9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_4.prefab using Guid(e8850fb7d0f4c624a984dac28120e9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3eaa7d96928a63b957267048674511d') in 0.014951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.290725 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_5.prefab
+  artifactKey: Guid(cbef0c0b17c0d0e439d878ac7882cadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_5.prefab using Guid(cbef0c0b17c0d0e439d878ac7882cadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1088bab5d641a38082a4e97df09a77') in 0.016979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.291856 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_6.prefab
+  artifactKey: Guid(ac8e55a3e187b5f49a82eab9ae5f2f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_6.prefab using Guid(ac8e55a3e187b5f49a82eab9ae5f2f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a28065de8684ae9df83a781e35f371') in 0.015272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.303901 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_7.prefab
+  artifactKey: Guid(800ca1e0156f83543ae7382a3ac2d3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_7.prefab using Guid(800ca1e0156f83543ae7382a3ac2d3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610685dfcf885aee746c275bd0ab39f7') in 0.014986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.319715 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_8.prefab
+  artifactKey: Guid(94ee686dbb26a68458752be062f8d98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_8.prefab using Guid(94ee686dbb26a68458752be062f8d98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a66c9bedea75c353220a1abd2cb8ba2') in 0.014600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.263419 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_9.prefab
+  artifactKey: Guid(e48be9a9d4914fb4b83d4e9d2ff06cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/CorridorNS_MyRooms_9.prefab using Guid(e48be9a9d4914fb4b83d4e9d2ff06cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca61f6a87b94ff42530b04fd3c4c6c5') in 0.022795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.582580 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/Entrance_MyRoom_1.prefab
+  artifactKey: Guid(7871bcbe296ed8a47be9077e0b38f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/Entrance_MyRoom_1.prefab using Guid(7871bcbe296ed8a47be9077e0b38f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f376a64921214c21735606b2328e0a5a') in 0.016268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.297025 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/LargeRoom_MyRoom_1.prefab
+  artifactKey: Guid(3a933f03f8b55a34aaa3975d92cda715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/LargeRoom_MyRoom_1.prefab using Guid(3a933f03f8b55a34aaa3975d92cda715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b892ebd8db6627f048b4ca10b14136') in 0.018733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.272669 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/MediumRoom_MyRoom_1.prefab
+  artifactKey: Guid(a944147a4dcf3104cbe873e5b3f33f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/MediumRoom_MyRoom_1.prefab using Guid(a944147a4dcf3104cbe873e5b3f33f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46baddc2cacd4bd8e3894ecee8275973') in 0.022156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.561514 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/SmallRoom_MyRoom_1.prefab
+  artifactKey: Guid(5955c94bda8ecd647adeb0d70195dfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/SmallRoom_MyRoom_1.prefab using Guid(5955c94bda8ecd647adeb0d70195dfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2112b779519ea7a3fead8e177aa05244') in 0.019228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.206796 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/SmallRoom_MyRoom_2.prefab
+  artifactKey: Guid(c0aeacfeaadae52419d7ad73cf56745d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/MyRooms/SmallRoom_MyRoom_2.prefab using Guid(c0aeacfeaadae52419d7ad73cf56745d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b88fb2d7fec04cc7fbde55b79d6c0b') in 0.018850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 118.473827 seconds.
+  path: Assets/Prefabs/GameResources/Dungeon/Rooms/RoomTemplate.prefab
+  artifactKey: Guid(441bc94d7aa37db4d8ee79fd2cae1729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Dungeon/Rooms/RoomTemplate.prefab using Guid(441bc94d7aa37db4d8ee79fd2cae1729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835a9b5beceda11cdb5de9713a50accd') in 0.025025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.885002 seconds.
+  path: Assets/Scripts/Dungeon/DungeonBuilder.cs
+  artifactKey: Guid(73c1ab8a405b7024dbaa0d4194628df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dungeon/DungeonBuilder.cs using Guid(73c1ab8a405b7024dbaa0d4194628df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f82480e49c909ef788721b8b0d279d5') in 0.009807 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003117 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.6 MB.
+System memory in use after: 126.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2793.
+Total: 2.450700 ms (FindLiveObjects: 0.233600 ms CreateObjectMapping: 0.111800 ms MarkObjects: 2.047700 ms  DeleteObjects: 0.056500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003180 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.119 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.6 MB.
+System memory in use after: 126.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2795.
+Total: 2.374800 ms (FindLiveObjects: 0.245900 ms CreateObjectMapping: 0.126100 ms MarkObjects: 1.971900 ms  DeleteObjects: 0.029800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 895.962061 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d90237e50ded6c2788930b8faec2f0') in 0.112680 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003134 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.116 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2797.
+Total: 2.688000 ms (FindLiveObjects: 0.264700 ms CreateObjectMapping: 0.135800 ms MarkObjects: 2.208600 ms  DeleteObjects: 0.077400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.056 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.6 MB.
+System memory in use after: 126.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2799.
+Total: 4.215900 ms (FindLiveObjects: 0.463400 ms CreateObjectMapping: 0.270900 ms MarkObjects: 3.456100 ms  DeleteObjects: 0.023200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003847 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.098 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2801.
+Total: 2.639100 ms (FindLiveObjects: 0.307400 ms CreateObjectMapping: 0.162100 ms MarkObjects: 2.146300 ms  DeleteObjects: 0.022100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004621 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2803.
+Total: 2.345000 ms (FindLiveObjects: 0.247400 ms CreateObjectMapping: 0.136700 ms MarkObjects: 1.941200 ms  DeleteObjects: 0.018500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003274 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.310 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2805.
+Total: 2.371900 ms (FindLiveObjects: 0.277600 ms CreateObjectMapping: 0.128200 ms MarkObjects: 1.949000 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003523 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2807.
+Total: 2.638400 ms (FindLiveObjects: 0.306900 ms CreateObjectMapping: 0.116900 ms MarkObjects: 2.158200 ms  DeleteObjects: 0.055200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.863804 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bccee11b03631cb5461cfefbd52ba0') in 0.123738 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.026834 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.108 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.6 MB.
+System memory in use after: 126.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2809.
+Total: 3.084000 ms (FindLiveObjects: 0.289800 ms CreateObjectMapping: 0.173800 ms MarkObjects: 2.511200 ms  DeleteObjects: 0.107800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.515446 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0950c1eb6e14a5b8ef412232b23143f') in 0.068457 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.071 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2811.
+Total: 2.433600 ms (FindLiveObjects: 0.271200 ms CreateObjectMapping: 0.204100 ms MarkObjects: 1.938400 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 398.801481 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader
+  artifactKey: Guid(e260cfa7296ee7642b167f1eb5be5023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader using Guid(e260cfa7296ee7642b167f1eb5be5023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b57eab49573366b9aeaddd3d67621e3') in 0.044422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.794360 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/ShadowGroup2D.shader
+  artifactKey: Guid(d33b6d70b14697547ad0dc2d4debb009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/ShadowGroup2D.shader using Guid(d33b6d70b14697547ad0dc2d4debb009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5fc9c199694adf2999435034e8c94ea') in 0.010965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.416649 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b86a10bbc754299210da0108bbc5e76') in 0.062288 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 5.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2813.
+Total: 2.941400 ms (FindLiveObjects: 0.279800 ms CreateObjectMapping: 0.254500 ms MarkObjects: 2.383000 ms  DeleteObjects: 0.022700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002970 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.121 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2815.
+Total: 2.417900 ms (FindLiveObjects: 0.256700 ms CreateObjectMapping: 0.155800 ms MarkObjects: 1.985700 ms  DeleteObjects: 0.018100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 196.926888 seconds.
+  path: Assets/MyAssets/Materials/Dungeon/DungeonLightShader_Variable.mat
+  artifactKey: Guid(a4ea43fe7ddf099428e90d7b7ac44139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Materials/Dungeon/DungeonLightShader_Variable.mat using Guid(a4ea43fe7ddf099428e90d7b7ac44139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edf9e1d2dcb093faf161dcdbe002a2c') in 1.096355 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003111 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.228 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.0 MB.
+System memory in use after: 133.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2897.
+Total: 3.280200 ms (FindLiveObjects: 0.317600 ms CreateObjectMapping: 0.224100 ms MarkObjects: 2.714200 ms  DeleteObjects: 0.023300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.317137 seconds.
+  path: Assets/Prefabs/GameResources/Resources/GameResources.prefab
+  artifactKey: Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameResources/Resources/GameResources.prefab using Guid(4c564e152a6ad4b41a93f8e556388d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b670348ec8418778f6cf3c26235627') in 0.074846 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

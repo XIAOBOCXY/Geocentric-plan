@@ -47,4 +47,22 @@ public class GameResources : MonoBehaviour
     [Tooltip("±ä°µµÄ²ÄÖÊ")]
     #endregion
     public Material dimmerMaterial;
+    public Material litMaterial;
+    public Shader variableLitShader;
+
+    #region Validation
+#if UNITY_EDITOR
+    // Validate the scriptable object details entered
+    private void OnValidate()
+    {
+        HelperUtlities.ValidateCheckNullValue(this, nameof(roomNodeTypeList), roomNodeTypeList);
+        HelperUtlities.ValidateCheckNullValue(this, nameof(currentPlayer), currentPlayer);
+        HelperUtlities.ValidateCheckNullValue(this, nameof(litMaterial), litMaterial);
+        HelperUtlities.ValidateCheckNullValue(this, nameof(dimmerMaterial), dimmerMaterial);
+        HelperUtlities.ValidateCheckNullValue(this, nameof(variableLitShader), variableLitShader);
+
+    }
+
+#endif
+    #endregion
 }

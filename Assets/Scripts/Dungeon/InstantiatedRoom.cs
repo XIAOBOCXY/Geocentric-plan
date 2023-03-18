@@ -26,6 +26,20 @@ public class InstantiatedRoom : MonoBehaviour
         roomColliderBounds = boxCollider2D.bounds;
     }
 
+    //当玩家进入房间 调用房间改变事件
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //玩家进入新房间
+        if (collision.tag == Settings.playerTag && room != GameManager.Instance.GetCurrentRoom())
+        {
+            //设置房间被访问
+            this.room.isPreviouslyVisited = true;
+            //调用房间改变事件
+            StaticEventHandler.CallRoomChangedEvent(room);
+        }
+    }
+
+
     //初始化 实例化的房间
     public void Initialise(GameObject roomGameobject)
     {

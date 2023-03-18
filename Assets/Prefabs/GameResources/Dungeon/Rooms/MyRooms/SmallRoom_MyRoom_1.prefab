@@ -25520,6 +25520,7 @@ GameObject:
   - component: {fileID: 2337183636710870689}
   - component: {fileID: 6835978877195361534}
   - component: {fileID: -4931668948326231824}
+  - component: {fileID: 7272604996573295402}
   m_Layer: 12
   m_Name: SmallRoom_MyRoom_1
   m_TagString: Untagged
@@ -25591,6 +25592,18 @@ MonoBehaviour:
   roomColliderBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &7272604996573295402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965689224661856195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5fa2475c5a0dd47ad381efa86911cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2430085614846788525
 GameObject:
   m_ObjectHideFlags: 0
