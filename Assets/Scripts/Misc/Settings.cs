@@ -4,6 +4,10 @@ using UnityEngine;
 
 public static class Settings//添加static,将其改为静态方法，删除MonoBehaviour脚本基类
 {
+
+    public const float pixelsPerUnit = 16f;
+    public const float tileSizePixels = 16f;
+
     #region DUNGEON BUILD SETTINGS
     public const int maxDungeonRebuildAttemptsForRoomGraph = 1000;
     public const int maxDungeonBuildAttempts = 10;
@@ -28,5 +32,14 @@ public static class Settings//添加static,将其改为静态方法，删除MonoBehaviour脚本
     public static int rollRight = Animator.StringToHash("rollRight");
     public static int rollLeft = Animator.StringToHash("rollLeft");
     public static int rollDown = Animator.StringToHash("rollDown");
+
+
+    //门的动画参数
+    public static int open = Animator.StringToHash("open");
+
     #endregion
+
+    public const string playerTag = "Player";
+    public const string playerWeapon = "playerWeapon";
+
 }

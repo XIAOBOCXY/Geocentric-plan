@@ -307,6 +307,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6104439624660811884, guid: b399656481b819d4f8507a88f229c4b8, type: 3}
+      propertyPath: m_TagString
+      value: playerWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 7412894645516513428, guid: b399656481b819d4f8507a88f229c4b8, type: 3}
       propertyPath: m_Size.x
       value: 0.25

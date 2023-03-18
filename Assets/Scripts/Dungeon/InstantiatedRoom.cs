@@ -33,6 +33,8 @@ public class InstantiatedRoom : MonoBehaviour
         PopulateTilemapMemberbariables(roomGameobject);
         //封住没有用的门
         BlockOffUnusedDoorWays();
+        //将门添加到房间中
+        AddDoorsToRooms();
         //禁止碰撞瓦片地图渲染器
         DisableCollisionTilemapRenderer();
     }
@@ -171,6 +173,62 @@ public class InstantiatedRoom : MonoBehaviour
         }
     }
 
+    //添加门到房间里，走廊不需要
+    private void AddDoorsToRooms()
+    {
+        //走廊不需要门
+        if (room.roomNodeType.isCorridorEW || room.roomNodeType.isCorridorNS) return;
+
+        //根据门方向实例化门预制体
+        foreach (Doorway doorway in room.doorWayList)
+        {
+
+            // 门预制体不为空并且门连接其他房间
+            if (doorway.doorPrefab != null && doorway.isConnected)
+            {
+                //计算每个tile的距离
+                float tileDistance = Settings.tileSizePixels / Settings.pixelsPerUnit;
+
+                GameObject door = null;
+
+                if (doorway.orientation == Orientation.north)
+                {
+                    //复制对象（被复制的对象，复制出的物体归属的父物体）
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x + tileDistance / 2f, doorway.position.y + tileDistance, 0f);
+                }
+                else if (doorway.orientation == Orientation.south)
+                {
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x + tileDistance / 2f, doorway.position.y, 0f);
+                }
+                else if (doorway.orientation == Orientation.east)
+                {
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x + tileDistance, doorway.position.y + tileDistance * 1.25f, 0f);
+                }
+                else if (doorway.orientation == Orientation.west)
+                {
+                    door = Instantiate(doorway.doorPrefab, gameObject.transform);
+                    door.transform.localPosition = new Vector3(doorway.position.x, doorway.position.y + tileDistance * 1.25f, 0f);
+                }
+
+                //获得门组件
+                Door doorComponent = door.GetComponent<Door>();
+
+                //如果是boss房间
+                if (room.roomNodeType.isBossRoom)
+                {
+                    doorComponent.isBossRoomDoor = true;
+
+                    //锁门
+                    doorComponent.LockDoor();
+
+
+                }
+            }
+        }
+    }
 
     //禁止碰撞瓦片地图渲染器
     private void DisableCollisionTilemapRenderer()
