@@ -1,0 +1,40 @@
+[api-updater (non-obsolete-error-filter)] 2023/3/22 14:34:08 : Starting E:/GraduationDesign/unity hub downloads/2020.3.46f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 920.2292ms
+moved types parse time: 73ms
+candidates parse time : 1ms
+C# parse time         : 910ms
+candidates check time : -1ms
+console write time    : -1ms
+
+[api-updater (non-obsolete-error-filter)] 2023/3/22 14:37:00 : Starting E:/GraduationDesign/unity hub downloads/2020.3.46f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 99.7571ms
+moved types parse time: 63ms
+candidates parse time : 1ms
+C# parse time         : 185ms
+candidates check time : -1ms
+console write time    : -1ms
+
+[api-updater (non-obsolete-error-filter)] 2023/3/22 14:37:28 : Starting E:/GraduationDesign/unity hub downloads/2020.3.46f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 95.9648ms
+moved types parse time: 81ms
+candidates parse time : 1ms
+C# parse time         : 253ms
+candidates check time : -1ms
+console write time    : -1ms
+
+[api-updater (non-obsolete-error-filter)] 2023/3/22 14:38:57 : Starting E:/GraduationDesign/unity hub downloads/2020.3.46f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 94.8137ms
+moved types parse time: 60ms
+candidates parse time : 1ms
+C# parse time         : 187ms
+candidates check time : -1ms
+console write time    : -1ms
+

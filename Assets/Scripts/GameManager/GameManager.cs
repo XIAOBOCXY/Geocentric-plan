@@ -27,6 +27,10 @@ public class GameManager : SingletonMonobehaviour<GameManager>
 
     [HideInInspector] public GameState gameState;
 
+    public void SetCurrentLevelIndex(int index)
+    {
+        currentDungeonLevelListIndex = index;
+    }
 
     protected override void Awake()
     {
@@ -106,6 +110,7 @@ public class GameManager : SingletonMonobehaviour<GameManager>
     //开始地牢当前level
     private void playDungeonLevel(int dungeonLevelListIndex)
     {
+        dungeonLevelListIndex = Mathf.Clamp(dungeonLevelListIndex, 0, dungeonLevelList.Count - 1);
         //为当前level创建dungeon
         bool dungeonBuiltSuccessfully = DungeonBuilder.Instance.GenerateDungeon(dungeonLevelList[dungeonLevelListIndex]);
         if (!dungeonBuiltSuccessfully)

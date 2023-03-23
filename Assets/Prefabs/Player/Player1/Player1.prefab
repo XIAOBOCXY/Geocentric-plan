@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: playerWeapon
       objectReference: {fileID: 0}
+    - target: {fileID: 6517610007915549805, guid: b399656481b819d4f8507a88f229c4b8, type: 3}
+      propertyPath: m_Bullet
+      value: 
+      objectReference: {fileID: 3128009746366374663, guid: 955570a35d1b344429564dd4e0c7573b, type: 3}
     - target: {fileID: 7412894645516513428, guid: b399656481b819d4f8507a88f229c4b8, type: 3}
       propertyPath: m_Size.x
       value: 0.25

@@ -61,11 +61,8 @@ public class Ammo : MonoBehaviour, IFireable
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //禁用子弹
-        DisableAmmo();
+        //DisableAmmo();
     }
-
-    
-
 
     //初始化弹药
     public void InitialiseAmmo(AmmoDetailsSO ammoDetails, float aimAngle, float weaponAimAngle, float ammoSpeed, Vector3 weaponAimDirectionVector, bool overrideAmmoMovement = false)
