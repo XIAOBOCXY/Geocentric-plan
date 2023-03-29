@@ -12,8 +12,12 @@ public class PlayerBullet : Bullet
         m_Trail = GetComponentInChildren<TrailRenderer>();
     }
 
+    /// <summary>
+    /// 销毁玩家弹药
+    /// </summary>
     protected override void OnBulletDestroy()
     {
+        //弹药轨迹不可见即销毁
         if (m_Trail.isVisible)
         {
             Destroy(gameObject);
@@ -38,5 +42,4 @@ public class PlayerBullet : Bullet
                 break;
         }
     }
-
 }

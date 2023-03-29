@@ -59,7 +59,9 @@ public class Door : MonoBehaviour
         }
     }
 
-    //锁门
+    /// <summary>
+    /// 锁门
+    /// </summary>
     public void LockDoor()
     {
         isOpen = false;
@@ -70,7 +72,9 @@ public class Door : MonoBehaviour
         animator.SetBool(Settings.open, false);
     }
 
-    //解锁门
+    /// <summary>
+    /// 解锁门
+    /// </summary>
     public void UnlockDoor()
     {
         doorCollider.enabled = false;

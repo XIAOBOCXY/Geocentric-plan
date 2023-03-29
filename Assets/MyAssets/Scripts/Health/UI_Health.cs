@@ -9,7 +9,6 @@ public abstract class UI_Health : MonoBehaviour
     [SerializeField] private Image m_Health;
 
     protected
-
     private Transform m_Target;
 
     private void Start()

@@ -26,14 +26,19 @@ public abstract class Bullet : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 发射弹药
+    /// </summary>
     public void Fire()
     {
+        //给刚体（弹药）添加一个力（参数为：方向*力的大小，力的模式）
         m_Rigid.AddForce(transform.right * m_FireForce, ForceMode2D.Impulse);
+        //生成两秒后销毁
         Destroy(gameObject, 2f);
     }
 
     /// <summary>
-    /// 子弹销毁
+    /// 弹药销毁
     /// </summary>
     protected void Destroy()
     {

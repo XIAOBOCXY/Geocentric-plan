@@ -11,24 +11,38 @@ public class Health : MonoBehaviour
 
     public event Action<int> OnHealthChangingEvent;
 
-    //设置开始健康值
+    /// <summary>
+    /// 设置开始健康值
+    /// </summary>
+    /// <param name="startingHealth"></param>
     public void SetStartingHealth(int startingHealth)
     {
         this.startingHealth = startingHealth;
         currentHealth = startingHealth;
     }
 
-    //获得开始健康值
+    /// <summary>
+    /// 获取开始健康值
+    /// </summary>
+    /// <returns></returns>
     public int GetStartingHealth()
     {
         return startingHealth;
     }
 
+    /// <summary>
+    /// 获取当前健康值
+    /// </summary>
+    /// <returns></returns>
     public int GetCurrentHealth()
     {
         return currentHealth;
     }
 
+    /// <summary>
+    /// 获取当前健康值比率
+    /// </summary>
+    /// <returns></returns>
     public float GetHealthRatio()
     {
         return currentHealth * 1f / startingHealth;

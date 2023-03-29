@@ -49,11 +49,18 @@ public class Global : MonoBehaviour
         });
     }
 
+    /// <summary>
+    /// 更新关卡数量的显示
+    /// </summary>
     private void UpdateLevel()
     {
         m_Level.text = string.Format("Level: " + m_CurrentLevel);
     }
 
+    /// <summary>
+    /// 更新敌人数量的显示
+    /// </summary>
+    /// <param name="value"></param>
     public void UpdateMonster(int value)
     {
         m_Monster.text = string.Format("Monster: " + value);

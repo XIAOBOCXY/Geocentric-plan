@@ -44,27 +44,22 @@ public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
         roomTemplateList = currentDungeonLevel.roomTemplateList;
         //加载scriptable object room templates到字典中
         LoadRoomTemplatesIntoDictionary();
-
         //初始化
         dungeonBuildSuccessful = false;
         int dungeonBuildAttempts = 0;
-
         //当还没建成并且尝试次数还没到最大
         while(!dungeonBuildSuccessful&& dungeonBuildAttempts < Settings.maxDungeonBuildAttempts)
         {
             dungeonBuildAttempts++;
             //从列表中随机选择一个房间节点图
             RoomNodeGraphSO roomNodeGraph = SelectRandomRoomNodeGraph(currentDungeonLevel.roomNodeGraphList);
-
             int dungeonRebuildAttemptsForNodeGraph = 0;
             dungeonBuildSuccessful = false;
-
             //循环直到地牢构建成功或者房间节点图尝试的次数超过最大值
             while(!dungeonBuildSuccessful && dungeonRebuildAttemptsForNodeGraph <= Settings.maxDungeonRebuildAttemptsForRoomGraph)
             {
                 //清空gameobjects和地牢房间字典
                 ClearDungeon();
-
                 dungeonRebuildAttemptsForNodeGraph++;
                 //尝试为选择的房间节点图建造一个随机的地牢
                 dungeonBuildSuccessful = AttemptToBuildRandomDungeon(roomNodeGraph);
@@ -74,10 +69,8 @@ public class DungeonBuilder :SingletonMonobehaviour<DungeonBuilder>
                 //实例化房间游戏对象
                 InstantiateRoomGameobjects();
             }
-
         }
         return dungeonBuildSuccessful;
-
     }
 
     //加载scriptable object room templates到字典中
