@@ -15,5 +15,15 @@ public class StartScene : MonoBehaviour
     {
         SceneManager.LoadScene("MainGameScene");
     }
-
+    /// <summary>
+    /// ÍË³öÓÎÏ·
+    /// </summary>
+    public static void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }
