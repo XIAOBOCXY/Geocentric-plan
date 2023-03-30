@@ -16,7 +16,6 @@ public class CinemachineTarget : MonoBehaviour
         cinemachineTargetGroup = GetComponent<CinemachineTargetGroup>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         //…Ë÷√CinemachineTargetGroup

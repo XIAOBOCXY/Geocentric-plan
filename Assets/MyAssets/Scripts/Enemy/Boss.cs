@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boss : Enemy
 {
-    [SerializeField] private float m_FollowDist = 20f;
+    [SerializeField] private float m_FollowDist = 30f;
     [SerializeField] private float m_MoveSpeed = 1f;
 
     private Animator m_Anim;

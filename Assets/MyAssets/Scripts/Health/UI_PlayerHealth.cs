@@ -39,7 +39,10 @@ public class UI_PlayerHealth : UI_Health
         }
     }
 
-
+    /// <summary>
+    /// 玩家健康值更新，当健康值为0，死亡并重新开始关卡
+    /// </summary>
+    /// <param name="health"></param>
     private void OnHealthChangingEvent(int health)
     {
         UpdateHeath(m_Player.health.GetHealthRatio());

@@ -153,19 +153,21 @@ public class InstantiatedRoom : MonoBehaviour
         //在房间模板中获取的房间门起始复制的左上角坐标
         Vector2Int startPosition = doorway.doorwayStartCopyPosition;
         //循环所有要添加的tiles
-        for (int xPos = 0; xPos < doorway.doorwayCopyTileWidth; xPos++)
+        for (int x = 0; x < doorway.doorwayCopyTileWidth; x++)
         {
-            for (int yPos = 0; yPos < doorway.doorwayCopyTileHeight; yPos++)
+            for (int y = 0; y < doorway.doorwayCopyTileHeight; y++)
             {
                 //获取瓦片的变换矩阵
-                Matrix4x4 transformMatrix = tilemap.GetTransformMatrix(new Vector3Int(startPosition.x + xPos, startPosition.y - yPos, 0));
-                //设置tile(瓦片在 Tilemap 上的位置,要置于单元格处的 Tile)
-                tilemap.SetTile(new Vector3Int(startPosition.x + 1 + xPos, startPosition.y - yPos, 0), tilemap.GetTile(new Vector3Int(startPosition.x + xPos, startPosition.y - yPos, 0)));
-                //设置瓦片(瓦片在 Tilemap 上的位置,变换矩阵)
-                tilemap.SetTransformMatrix(new Vector3Int(startPosition.x + 1 + xPos, startPosition.y - yPos, 0), transformMatrix);
+                Matrix4x4 transformMatrix = tilemap.GetTransformMatrix(new Vector3Int(startPosition.x + x, startPosition.y - y, 0));
+                //设置tile(参数为 瓦片在 Tilemap 上的位置,要置于单元格处的 Tile)
+                tilemap.SetTile(new Vector3Int(startPosition.x + 1 + x, startPosition.y - y, 0), tilemap.GetTile(new Vector3Int(startPosition.x + x, startPosition.y - y, 0)));
+                //设置瓦片(参数为 瓦片在 Tilemap 上的位置,变换矩阵)
+                tilemap.SetTransformMatrix(new Vector3Int(startPosition.x + 1 + x, startPosition.y - y, 0), transformMatrix);
             }
         }
     }
+
+    
 
     //封锁东西的门
     private void BlockDoorwayVertically(Tilemap tilemap, Doorway doorway)
