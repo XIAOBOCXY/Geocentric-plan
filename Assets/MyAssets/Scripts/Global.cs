@@ -71,7 +71,7 @@ public class Global : MonoBehaviour
     /// </summary>
     public static void PassLevel()
     {
-        int count = Instance.m_CurrentLevel += 1;
+        int count = Instance.m_CurrentLevel + 1;
         Const.SetLevelPrefs(count);
 
         bool isAll = count > TOTAL_LEVEL_COUNT;
